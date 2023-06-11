@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sample.css">
+</head>
+<body>
+<!--b tag for bold and i tag for italic text -->
+<!--CSS Selectors-->
+<!--Simple Selectors: select elements based on Name, ID, Class-->
+
+   <p>HTML is the standard markup <b>language</b> for Web pages.</p>
+   
+   <p id="m"><i>With HTML you can create your own Website.</i></p>
+
+   <p>HTML is easy to <em>learn</em> - You will <strong>enjoy it!</strong></p>
+
+    <h2 class="color">For Web page development CSS is important.</h2>
+
+<!--Descendant Selector matches all elements that are descendants of a specified element-->
+<!--Following example selects all <p> elements inside div tag / element -->
+
+    <p style="color: rgb(228, 47, 47); text-decoration: dashed; font-weight: bold; font-size: large; ">Descendant Selector</p>
+
+    <div>
+        <p> I am p element one inside div tag</p>
+        <p> I am p element two inside div tag</p>
+        <p> I am p element three inside div tag</p>
+    </div>
+    <p style="font-weight: bold; font-size: large; font-style: oblique;">I am p element four outside div tag and not included descendant css selector: div p{}. </p>
+
+<!--child selector(>)-->
+<!--Child Selector selects all elements that are the children of s specified element, here all <p> element are children of a div-->
+
+    
+
+</body>
+</html>

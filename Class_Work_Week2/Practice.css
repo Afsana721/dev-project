@@ -1,0 +1,14 @@
+
+.color{
+    background-color: gainsboro;
+    font-size: large;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.centered-text{
+    margin: auto;
+    text-align: center;
+    font: size 40px;
+    color: red;
+}

@@ -1,0 +1,21 @@
+#m{
+    text-align: center;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.color{
+    text-align: right;
+    color: orange;
+}
+
+div p{
+    background-color: aqua;
+    color: red;
+    text-align: left;
+    font-weight: bold; 
+    font-size: large; 
+    font-style: italic;
+   
+}
+
