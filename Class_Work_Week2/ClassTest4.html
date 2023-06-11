@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Today.css">
+</head>
+  <body>
+<!--bootstrap containers-->
+    <div class="container">
+        <h1> My bootstrap container page</h1>
+        <p>This part is under bootstrap container class which included fixed width container.</p>
+        <p>Resize the browser window to check that the container width will change at 
+        different breakpont.So we can use container class only for fixed width situation.
+        It is easy way to develop a web page with different design, also comfortable way. 
+    </p>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 60px;" >
+        <h1>My bootstrap container-fluid page</h1>
+        <p> This part is under bootstrap container-fluid class which included spanning the 
+        entire width of the viewport</p>
+        <p>The container-fluid class provides a full width container</p>
+
+    </div>
+
+<!--bootstrap 5 Grid system, Grid sytme is built with flexbox and allows up to 12 columns across the page.-->
+    
+    <div class="row" style="border-top: 80px; height: 40px;">
+        <div class="col p3 bg-danger text-white"> col</div>
+        <div class="col-sm p3 bg-dark text-white">col-sm</div>
+        <div class="col-md p3 bg-warning text-white">col-md</div>
+        <div class="col-lg p3 bg-success text-white">col-lg</div>
+        <div class="col-xl p3 bg-info text-white">col-xl</div>
+        <div class="col-xxl p3 bg-primary text-white">col-xxl</div>
+       
+    </div>
+<!--Hightlight Text using Mark & abbreviation Mark-->
+    <div class=container mt-3" style="margin-top: 100px;">
+        <h1>Mark Text</h1>
+        <p>Use the Mark element to<mark>highlight</mark>text here.</p>
+        <p style="font-weight: bold;">The abbr element is used to mark abbreviation or acronym</p>
+        <p> The <abbr title="World Health Organization">WHO</abbr></p>
+    </div>
+
+<!-- Bootstrap -dl element uses for text highlight under description -->
+    <div class="container mt-3">
+        <h1> Description highlight text</h1>
+        <p>The dl element indicates a description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- White cold drink</dd>
+        </dl>
+    </div>
+
+<!--bootstrap <code> style: span, section & div defines a section in a document-->
+    
+    
+        <div class="container mt-3">
+            <h1>Code Snippets</h1>
+            <p> Inline snippets of code shuld be embedded in the code element:</p>
+            <p style="font-weight: 15px; font-weight: bold;">The following elements: <code>span<code>, <code>selection</code>. amd <code>div</code> defines a section in a document.</p>
+        </div>
+
+        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

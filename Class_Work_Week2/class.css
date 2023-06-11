@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    font-family: Roboto;
+  }
+  ​
+  .navbar {
+    background-color: #3b5998;
+    height: 90px;
+  }
+  ​
+  #logo {
+    float: left;
+    color: white;
+    padding: 22px 60px;
+  }
+  ​
+  a {
+    float: right;
+    padding: 33px 60px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  ​
+  /* Pseuodoclasses */
+  a:hover {
+    background-color: #039BE5;
+    color: #FFD54F;
+  }
