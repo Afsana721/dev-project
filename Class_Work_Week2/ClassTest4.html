@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="Today.css">
+    <link rel="stylesheet" href="flex.css">
 </head>
   <body>
 <!--bootstrap containers-->
@@ -59,16 +60,244 @@
     </div>
 
 <!--bootstrap <code> style: span, section & div defines a section in a document-->
-    
-    
+        
         <div class="container mt-3">
             <h1>Code Snippets</h1>
             <p> Inline snippets of code shuld be embedded in the code element:</p>
             <p style="font-weight: 15px; font-weight: bold;">The following elements: <code>span<code>, <code>selection</code>. amd <code>div</code> defines a section in a document.</p>
         </div>
 
+<!--bootstrap table-->  
+  <!--Basic table-->  
+        <div class="container mt-3">
+            <h2 class="bg-warning" >Basic table with light padding & horizontal dividers</h2>
+            <table class="table">
+             <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Emali</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>ABC</td>
+                    <td>DEF</td>
+                    <td>ghm@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>BBA</td>
+                    <td>ADD</td>
+                    <td>knp@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>XXY</td>
+                    <td>KKM</td>
+                    <td>qq@gmail.com</td>
+                </tr>
+             </tbody>
+            </table>
+                   
+
+        </div>
+
+        <br>
+        <div class="container">
+            <h2 >Java Script</h2>
+            <button type="button" onclick="document.getElementById('demo').innerHTML=date()" >
+            Click it to display data & time.
+
+            </button>
+        </div>
+
+<!--Striped Rows-->
+        <div class="container text-warning">
+        <h2 style="font-weight: bold;">Striped Rows Sample</h2>
+        <table class="table table-striped " style="font-size: 20px;">
+         <thead>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+            <td>MKj</td>
+            <td>FNK</td>
+            <td>mkl@gmail.com</td>
+            </tr>
         
+            <tr>
+              <td>John</td>
+              <td>smith</td>
+              <td>Jo@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Knnl</td>
+                <td>MllG</td>
+                <td>mk@gmail.com</td>
+              </tr>
+        </tbody>
+        </table>
+
+        </div>
+
+    <!--Bordered table Rows-->
+        <div class="container">
+        <h2 style="font-weight: bold; color:red;">Broderd Rows Sample</h2>
+        <table class="table table-bordered" style="font-size: 20px;">
+         <thead>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+            <td>MKj</td>
+            <td>FNK</td>
+            <td>mkl@gmail.com</td>
+            </tr>
+        
+            <tr>
+              <td>John</td>
+              <td>smith</td>
+              <td>Jo@gmail.com</td>
+            </tr>
+        </tbody>
+        </table>
+
+        </div>
+
+<!--Hover table Rows-->
+        <div class="container">
+        <h2 style="font-weight: bold; color:rgb(119, 0, 255);">Hover Rows Sample</h2>
+        <table class="table table-hover" style="font-size: 20px;">
+        <thead>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>XXX</td>
+            <td>YYY</td>
+            <td>xy@gmail.com</td>
+            </tr>
+        
+            <tr>
+            <td>John</td>
+            <td>smith</td>
+            <td>Jo@gmail.com</td>
+            </tr>
+
+            <tr>
+            <td>Hml</td>
+            <td>xyn</td>
+            <td>hm@gmail.com</td>
+            </tr>
+        </tbody>
+        </table>
+
+        </div>
+
+<!--Black/Dark table Rows-->
+        <div class="container">
+            <h2 style="font-weight: bold; color:rgb(255, 0, 140);">Bark Rows Sample</h2>
+            <table class="table table-dark" style="font-size: 20px;">
+            <thead>
+                <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+                </tr>
+            </thead>
     
+            <tbody>
+                <tr>
+                <td>uln</td>
+                <td>pmk</td>
+                <td>pk@gmail.com</td>
+                </tr>
+            
+                <tr>
+                <td>Jon</td>
+                <td>Mick</td>
+                <td>Jm@gmail.com</td>
+                </tr>
+    
+                <tr>
+                <td>ghj</td>
+                <td>gyu</td>
+                <td>gg@gmail.com</td>
+                </tr>
+            </tbody>
+            </table>
+    
+            </div>
+
+<!--contextual table Rows-->
+        <div class="container">
+        <h2 style="font-weight: bold; color:rgb(0, 255, 4);">Contextual Rows Sample</h2>
+        <table class="table" style="font-size: 20px;">
+            <thead>
+                <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                <td>Default</td>
+                <td>Default</td>
+                <td>Default</td>
+                </tr>
+
+                <tr class="table-success">
+                <td>ggg</td>
+                <td>hhh</td>
+                <td>kk@gmail.com</td>
+                </tr>
+            
+                <tr class="table-danger">
+                <td>Jjj</td>
+                <td>Mmm</td>
+                <td>mm@gmail.com</td>
+                </tr>
+    
+                <tr class="table-info">
+                <td>ghj</td>
+                <td>gyu</td>
+                <td>gg@gmail.com</td>
+                </tr>
+            </tbody>
+            </table>
+    
+            </div>
+
+
+<!--flex --> <h2 class="text-danger">Flex</h2>
+        <div class="container">
+            <div>Hello</div>
+            <div>Hi</div>
+            <div>Hello</div>
+            <div>Hi</div>
+            <div>Hello</div>
+            <div>Hi</div>
+        </div>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

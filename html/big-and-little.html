@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="bigstyle.css">
+
+    <style>
+        @media screen and(max-height:500px) {
+        .short{background-color: greenyellow;} 
+        }
+        .short{
+            font-size: 150%;
+        }
+       @media screen and (min-height:500px) {
+        .long{background-color: orange;}
+       }
+       .long{
+        font-size: 150%;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="short">This is short screen</div>
+    <div class="long">This is long screen</div>
+<!--<div class="small">This is short screen</div>-->
+ 
+<!--title – gives a cool hover feature that displays text over an element-->
+<p id="paragraph-1" class="fancy-paragraph" title="I am a title">
+    Hover over me to see the title
+</p>
+<p id="paragraph-1" class="fancy-paragraph" title="I am a title">
+    Hover over me to see the title
+</p>
+<p id="paragraph-2" class="fancy-paragraph">
+I have not title. I am sad.
+</p>
+<p id="paragraph-1" class="fancy-paragraph error-message">
+    Hover over me to see the title
+    <img src="https://appacademy.io/images/smiley.jpg" width="200">
+</p>
+<br style="height:2px">
+
+<!-- using form element to design form and used lable, user input, textarea and button-->
+<!--action attribute defines locaiton(url), where the form's collected
+data should be sent when it is submitted & method attribute defines http method to send the 
+data with. Browser support only get and post actions-->
+
+<h3 class="container text-danger">Hello! Start a form now!</h3>
+<form>
+<fieldset>
+    <legend>Add user</legend>
+    <div>
+    <label>First Name</label>
+    <input type="text" id="FirstName" name="first_name">
+    </div>
+
+    <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="last_name">
+    </div>
+
+    <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email_address">
+    </div>
+
+    <div>
+    <label for="role">Role</label>
+    <select  id="role" name="user_role_name">
+     <option value="admin"> Admin</option>
+     <option value="user">User</option>
+     <option value="guest">Guest</option>
+    </select>
+   </div>
+
+   <div>
+    <label for="expiration">Expiration</label>
+    <input type="data" id="expiration" name="expiration">
+   
+   </div>
+
+   <div>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="bio"></textarea>
+   </div>
+
+   <div>
+    <button type="submit">Add this person</button>
+   </div>
+</fieldset>
+</form>
+
+
+</body>
+</html>
