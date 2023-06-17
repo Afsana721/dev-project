@@ -1,0 +1,14 @@
+
+button {
+    padding: 10px 20px;
+    background-color: coral;
+    color: rgb(142, 37, 234);
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: rgb(30, 255, 109);
+  }
+  

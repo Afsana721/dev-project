@@ -1,0 +1,16 @@
+
+.custom-footer {
+    background-color: rgb(239, 231, 246);
+    box-shadow: 0px 0px 0px #efecf3;
+    
+    border-bottom: 1px rgb(218, 189, 244);
+    padding: 30px;
+  }
+
+
+  /*.custom-footer {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;*/
