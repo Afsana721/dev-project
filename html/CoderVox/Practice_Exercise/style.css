@@ -1,0 +1,51 @@
+
+body{
+    background-color: #E0E0E0;
+}
+
+div {
+    width: 500px;
+    height: 400px;
+    background-color: #66d9eb; 
+    border-radius: 10px;
+    margin: 100px auto;
+    padding: 50px;
+}
+
+button {
+    font-family: 'Acme', sans-serif;
+/*no border- border non*/
+
+    border: none;
+    background-color: #0D47A1;
+    width: 400px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+/*25px to to buttom & 40px left to right. */
+
+    margin: 25px 40px;
+
+/*border-radius managed the button edge. */
+    border-radius: 10px;
+}
+
+
+/* used fa classes as css selector for icons color */
+.fa-coffee {
+    color: #FF9800;
+}
+
+.fa-check {
+    color: #FFEB3B;;
+}
+
+.fa-trash {
+    color: #76FF03;
+}
+
+/* used span tag to make a distance between icon and button text. And added padding left 10px from the left side. */
+span {
+    padding-left: 10px;
+}

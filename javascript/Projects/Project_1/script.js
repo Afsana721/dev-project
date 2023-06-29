@@ -1,3 +1,5 @@
+
+
 function greetingsInfo() {
     var name = prompt("Please enter your name.");
     var snack = prompt("What is your favorite snack?");

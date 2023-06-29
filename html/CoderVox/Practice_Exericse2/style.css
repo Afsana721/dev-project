@@ -1,0 +1,58 @@
+
+body {
+/* margin 0 remove any defalult margin that comes from browsers.*/
+    margin: 0;
+}
+
+
+
+ul {
+/* list-style-type is none- property remove list marker (*), */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #37474F;
+
+/* prevent unwanted horizontal scrolling and extra whitespace. */
+    overflow: hidden;
+    
+}
+
+li {
+/* horizontal navigation bar to specify <li> element as inline. Also can use flat for horizontal naigation bar. 
+On a single line from the left side. */
+
+    /*display: inline; */
+    float: left;
+/* border property make a border line by selecting color*/
+    border-right: 1px white solid;
+}
+
+li a {
+/* display property convert things to block level element. */
+display: block;
+/* padding top to buttom 25px and left to right 112px. */
+    padding: 25px 112px;
+    font-size: 24px;
+    color: white;
+/* remove text underline that got by link. */
+    text-decoration: none;
+/* used custom font usng google font. */
+    font-family: 'Francois One', sans-serif;
+}
+
+/* hover used to hover over items and changes as dark color, but using: not(.logo) class- not hoverring logo class.*/
+a:hover:not(.logo) {
+    background-color: #263238;
+}
+
+
+/* changed logo class backgroung. */
+.logo {
+    background-color: #01579B;
+}
+
+/* can precisely target and style specific elements of <a> tag inside <li>. */
+.fa-building{
+    color: #FFEB3B;
+}
