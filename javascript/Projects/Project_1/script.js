@@ -1,4 +1,5 @@
 
+// created function with three variables.
 
 function greetingsInfo() {
     var name = prompt("Please enter your name.");

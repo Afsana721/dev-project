@@ -1,0 +1,65 @@
+
+/* for html body height & weidth*/
+html, body {
+    height: 100%;
+
+}
+
+/* For homepage backgroung:use id background1 and add url path from Assets folder. And center will set the image, not going to repeated, whole image will be visible*/
+/* background color white so we can see the text white color & set background image's height, width */
+/*display: flex property in CSS is used to create a flexible box layout,  
+It allows us to easily create responsive and flexible layouts by distributing space among the items 
+within a container*/
+
+#background1 {
+    background: url('Assets/Js_background1\ \(1\).jpg') center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
+flex direction is set to column */
+    align-items: center;
+}
+
+
+#message{
+    width: 500px;
+    font-weight:900px;
+    font-size: 54px;
+    
+/* All text transform uppercase letter*/
+    text-transform: uppercase;
+/* All text aligned in center.*/
+    text-align: center;
+    
+    
+     
+}
+
+
+
+#background2 {
+    background: url('Assets/Js_background2\ \(1\).jpg');
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
+flex direction is set to column */
+    align-items: center;
+}
+
+#message1{
+    width: 500px;
+    font-weight:900px;
+    font-size: 54px;
+    
+/* All text transform uppercase letter*/
+    text-transform: uppercase;
+/* All text aligned in center.*/
+    text-align: center;
+    
+    
+     
+}

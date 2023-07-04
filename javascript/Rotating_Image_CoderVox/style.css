@@ -1,0 +1,17 @@
+
+/* Container holding the image and the text */
+.textoverlay {
+    position: relative;
+  }
+  
+  /* Bottom right text, absolute allow move text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);   /* makes black color transparent;*/
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: OsWald;
+  }

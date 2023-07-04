@@ -1,0 +1,149 @@
+
+/* for html body height & weidth*/
+html, body {
+    height: 100%;
+
+}
+
+/* For homepage backgroung:use id background1 and add url path from Assets folder. And center will set the image, not going to repeated, whole image will be visible*/
+/* background color white so we can see the text white color & set background image's height, width */
+/*display: flex property in CSS is used to create a flexible box layout,  
+It allows us to easily create responsive and flexible layouts by distributing space among the items 
+within a container*/
+
+#background1 {
+    background: url('Assets/background1.jpg') center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
+flex direction is set to column */
+    align-items: center;
+}
+
+
+
+/* message- background text where created id value is message. Where limit the width */
+
+#message {
+    width: 900px;
+/*margin 0 auto- automatically centered the text message*/
+    margin: 0 auto;
+
+/* All text transform uppercase letter*/
+    text-transform: uppercase;
+/* All text aligned in center.*/
+    text-align: center;
+    
+}
+
+/* Specifying h1 text,  and for text border used '-webkit-text-stroke with thickness & color.*/
+
+#message h1 {
+    font-size:54px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+}
+
+/* for Coffeeplex icon size, color & padding between Coffeeplex text.*/
+.navicon {
+    font-size: 24px;
+    color: #fd7e14;
+    padding-right: 10px;
+}
+
+/* used fooder id selector for some changes, padding 50px from button, 0 left and right */
+#the-footer {
+    background-color: #263238;
+    color: white;
+    padding: 50px 0;
+    font-size: 13px;
+ 
+
+}
+
+/* #the-footer h6 is a selector that targets the <h6> elements */
+#the-footer h6 {
+    color: #1e88e5;
+
+}
+
+#the-footer a {
+    color: #cfd8dc;
+}
+
+
+.footericon {
+    font-size: 96px;
+    color: #fd7e14;
+}
+
+/* About page css selectors & properties*/
+
+/*About page background use background2 id */
+
+#background2 {
+    background: url('Assets/background2.jpg') center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
+flex direction is set to column */
+    align-items: center;
+}
+
+/* padding and other properties using section div class, so apply whole dev section */
+/* 112px top & button, opx on the left & right side */
+/* overflow hidden- to ensure that any overflowing content is not displayed outside of the container's boundaries. */
+.section {
+    padding:112px 0px;
+    overflow: hidden;
+
+}
+
+    #middle_img {
+        width: 470px;
+        height: 300px;
+        padding-left: 40px;
+    }
+
+/* second middle section*/
+/* backgroung black and text color white */
+    .middle {
+    background: #262f36;
+    color: white;
+    }
+
+/* addjust second mid image size*/
+    #sec_mid {
+        width: 470px;
+        height: 300px;
+        
+    }
+/* second mid h2 test color */
+ .middle h2 {
+    color: #cfd8dc;
+ }
+
+
+ /* Contact page css selectors & properties*/
+
+/*Contact page background use background2 id */
+
+#background3 {
+    background: url('Assets/background3.jpg') center center no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
+flex direction is set to column */
+    align-items: center;
+}
+
+.col-sm-6 {
+    padding-left: 60px;
+}
