@@ -1,0 +1,17 @@
+
+<!-- adds header.ejs file here, using directory folder/filename.-->
+
+<%- include("Partials/header") %>
+
+    
+<% data.forEach(function(person) { %>
+    <p> <%= person.name %> is a <%= person.occupation %> at <%= person.company %> </p>
+
+<% }) %>
+
+
+
+<!--adds footer ejs file here, makes a reusability -->    
+
+<%- include("Partials/footer") %>
+
