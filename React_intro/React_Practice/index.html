@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- REACT LIBRARY -->
+      <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+      <!-- REACT DOM LIBRARY -->
+      <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+      <!-- BABEL LIBRARY -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <title>React doc</title>
+</head>
+<body>
+   
+<!--first react component-->
+    
+    <div id="root">
+<!--the mounting point-->
+    </div>
+
+<!--adds text/babel to transpile our JSX code into normal Javascript.-->
+
+    <!--<script type="text/babel">
+        ReactDOM.render(
+            <h1>Hello, Bootcampers!!!</h1>,
+            document.getElementById('root')
+        );
+    </script>-->
+
+ <!--Each React component MUST have a render function-->   
+    <!--<script type="text/babel">
+            const rootElement = document.getElementById('root');
+            const element= <h1>Hello, Bootcampers!!</h1>;
+            ReactDOM.render(element, rootElement);
+                
+    </script>-->
+    
+    <script type="text/babel">
+            const rootElement = document.getElementById('root');
+            
+            function App() {
+                const time = new Date().toLocaleTimeString()
+                return(
+                    <div>
+                        <h1>Hello, World!</h1>
+                        <h2>It is {time}.</h2>
+                    </div>
+                );
+            }
+            ReactDOM.render(<App />, rootElement);
+
+    </script>
+
+    
+</body>
+</html>

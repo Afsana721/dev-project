@@ -1,0 +1,21 @@
+
+div {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+span {
+    color: blue;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+li {
+    margin-left: 15px;
+}

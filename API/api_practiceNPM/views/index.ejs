@@ -1,5 +1,4 @@
-<%- include("partials/header") %>
-
+<%- include('partials/header.ejs') -%>
 
 
     <div class="site-wrapper">
@@ -17,11 +16,11 @@
 
                 <div class="inner cover">
                     <h1 class="cover-heading">Generate an inspirational quote.</h1>
-                    <p class="lead">Click the button to get an inspirational quote that will fill your entire day with
+                    <p class="lead">Click the button to get an inspirational that will fill your entire day with
                         inspiration!</p>
 
-                    <form method="get" action="/quote">
-                        <button>Get Quote</button>
+                    <form action="/quote" method="get">
+                        <button class="btn btn-lg btn-secondary btn-info">Get Quote</button>
                     </form>
 
                 </div>
@@ -33,4 +32,8 @@
     </div>
 
 
-    <%- include("partials/footer") %>
+
+
+
+
+    <%- include('partials/footer.ejs') -%>

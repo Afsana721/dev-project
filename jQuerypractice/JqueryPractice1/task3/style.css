@@ -1,0 +1,9 @@
+
+#imag3 {
+    height: 250px;
+    width: 450;
+/* opacity define fading effect of the image*/
+    opacity: 0.4;
+    position: absolute;
+}
+

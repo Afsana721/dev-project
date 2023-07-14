@@ -1,0 +1,19 @@
+
+<%- include ("partials/header.ejs") %>
+
+<h2>Hi,I am the INDEX page now!</h2>
+
+<div class="container">
+
+<!--action allow location-->
+    <form action="/" method="get">
+        <input id="btn" type="submit" value="Click for new Dog">
+
+    </form>
+    <h1>Random Dog Pic Generator</h1>
+    <img id='pic' src=<%= image %> alt="dog" />
+    <br><br>
+
+</div>
+
+<%- include ("partials/footer.ejs") %>

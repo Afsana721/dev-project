@@ -1,0 +1,19 @@
+
+
+
+
+<div>
+    <form action="/price" method="get">
+        <input type="radio" name ="country" value="USD" checked>USD
+        <input type="radio" name ="country" value="USD" >GBP
+        <input type="radio" name ="country" value="USD" >EUR
+        <br><br>
+        <input type="submit" value="Get Price" id="btn" >
+    </form>
+    <br>
+    
+    <h2>This is the current price: <%- symbol %> <%= rate %></h2>
+</div>
+
+
+

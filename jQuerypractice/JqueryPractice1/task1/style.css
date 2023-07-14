@@ -1,0 +1,46 @@
+
+#text1 {
+    text-align: center;
+}
+
+#btn {
+    margin-left:50%;
+    text-align: center;
+}
+
+
+
+
+#div1 {
+    margin:auto;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    background-color: cadetblue;
+    height: 300px;
+    width: 300px;
+    position:relative;
+}
+
+#div2 {
+    margin: auto;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    position:relative;
+}
+
+#div3 {
+    margin:auto;
+    text-align: center;
+    border: 3px black dotted;
+    font-size: 30px;
+    background-color: rgb(66, 234, 19);
+    height: 300px;
+    width: 300px;
+    position:relative;
+}
+

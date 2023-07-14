@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- REACT LIBRARY -->
+      <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+      <!-- REACT DOM LIBRARY -->
+      <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+      <!-- BABEL LIBRARY -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+      <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <!--The MOunting Poin-->
+    </div>
+
+    <script type="text/babel">
+        const rootElement = document.getElementById('root');
+
+        function Garfield() {
+            const image = "https://s3.amazonaws.com/accsoftwarebootcamp.com/garfield-1.jpg"
+            const theStyles = {
+                color: "red",
+                fontSize: "38px"
+            }
+            
+            return (
+                <div className="theImage">
+                 <h1 className="name" style={theStyles}>Garfield's Life</h1>
+                 <img src={image} alt="Garfield Comic"/>
+                 <h3>How does he feel?</h3>
+                 <FeelingsList/>
+                                 
+                </div>
+            )
+        }
+
+        function FeelingsList(){
+            return (
+                <div>
+                    <h1>Feelings List</h1>
+                    <ul>
+                        <li>Hungry</li>
+                        <li>Determined</li>
+                        <li>Excited</li>
+                    </ul> 
+                </div>      
+            )
+        }
+
+        ReactDOM.render(<Garfield /> , rootElement);
+    </script>
+    
+</body>
+</html>
