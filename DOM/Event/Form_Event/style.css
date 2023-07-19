@@ -1,0 +1,23 @@
+
+form {
+    padding-left: 40px;
+}
+
+.inp {
+    width: 200px;
+    height: 25px;
+    border: 2px black solid;
+    background-color: hwb(0 93% 4%);
+}
+
+#btn {
+    width: 80px;
+    height: 30px;
+    border: 2px black solid;
+    background-color: #d3e0ed;
+}
+
+
+#theMessage {
+    color: blue;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Francois+One&family=Oswald:wght@200&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--using navbar classs navbar-dark and bg-primary for navbar blue color, used ul tag, li tag for unorderd list-->
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Rent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- div with bootstrap container class, give some padding on the left & right sides. -->
+    <!-- h1 contained bootstrap class:mt-4->marging top &   mb-5 ->marging bottom & typography class:display-3 for text style -->
+    <div class="container">
+        <h1 class="mt-4 mb-3 display-3">Home prices are significantly increasing</h1>
+
+        <!--Bootstrap’s cards provide a flexible and extensible content-->
+
+        <div class="card">
+            <!--Image Textoverlay can be used to add captions or descriptions to images-->
+            <div class="textoverlay">
+
+                <img src="Assets/Rotaing_img1.jpg"  class="card-img-top" alt="house">
+
+                <!--div containing text/ content on the image-->
+                <div class="text-block">
+                    <h1>These homes are beautiful. Why aren't they being bought?</h1>
+                </div>
+
+            </div>
+
+            <div class="card-body">
+
+                <p class="card-text">A house like this is becoming increasingly difficut for yourger people to buy.</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+    <!--outside card div & here used bootstarp class test-muted to dim first p tag text, mt-4 allows margin top space-->
+
+        <p class="text-muted mt-4">By Gary | Senior editor of the News</p>
+        <p>More and more millennials are not able to afford homes. This is because of rising home prices, a low supply of affordable housing, 
+        as well as many young people choosing to put off marriage.</p>
+        <p>80 percent of people who do not own homes said they couldn't afford it because of student loans. This means that recent college graduates
+        are focused on paying for their education, which lowers the chances of tehm becoming homeowners.</p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

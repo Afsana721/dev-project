@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Francois+One&family=Oswald:wght@200&family=Roboto&display=swap"
+      rel="stylesheet"/>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+ <!--create a navbar:bootstrap 4.3 navbar sample-->
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Rent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">FAQ</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+         
+          </div>
+        </div>
+      </nav>
+ 
+<!--create a container to get left & right empty space, spacing inside div for margin mt(margin-top)& mb(margin-bottom) using bootstrap -->
+<!--use bootstrap Typography for heading text content display class- display-3 in h1 tag.-->  
+<!--use text-block class (Ref: w3 School).using div as a container and add some text on the upon of the image, and to do this add css style->
+    <div class="container">
+        <h1 class="mt-4 mp-3 display-3">Home prices are significantly increasing</h1>
+
+<!--add bootstrap card component to create a html card structure.-->
+        <div class="card" >
+            <div class="textoverlay">
+                <img src="Assets/Rotaing_img1.jpg" class="card-img-top" alt="house">
+            <div class="text-block">
+                <h1>These homes are beautiful. Why aren't they being bought?</h1>
+            </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text">A house like this is becoming increasingly difficult for younger people to buy.</p>
+            </div>
+        </div>
+<!--use text-muted class to mute brightness of first text color (bootstrap-class="text-muted")-->
+<!--use mt-4 bootstrap class to make space between two p- paragraph-->
+
+        <p class="text-muted mt-4">By Gray | Senior eidtor of the News</p>
+
+        <p>More and more millennials are not able to afford homes. This is because of rising home prices, a low supply of affordable housing, 
+            as well as many young people choosing to put off marriage.</p>
+        <p>80 percent of people who do not own homes said they couldn't afford it because of student loans. This means that recent college 
+            graduates are focused on paying for their education, which lowers the chances of them becoming homeowners.</p>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/script" src="script.js"></script>
+  </body>
+</html>

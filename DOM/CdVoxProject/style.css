@@ -1,0 +1,22 @@
+
+
+/* textoverlay class holding the image and the text. textoverlay class position is relative*/
+.textoverlay {
+    position: relative;
+  }
+  
+  /* Bottom right text. And position is absolute, so text item can move inside textoverlay image item (textoberlay opsiton is relative. */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);   /* make backgroung color transparent using 0.5 */
+    color: white;                        /*rgba(red, green,blue,alpha: is a color component that represents the degree of transparency */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Oswald;
+  }
+
+
+
+  
