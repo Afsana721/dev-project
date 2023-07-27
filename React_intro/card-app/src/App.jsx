@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Card from './Card';
+import Card from './components/Card';            //imported Card object from source : ./components/Card (file location.)
 
 
 //create App function with different variable

@@ -1,28 +1,50 @@
 
-/* create three variables, they are holding prompt function. function takes a string argument & returns user input 
-as a string*/
-
-var name = prompt("Tell me your name.");
-var num1  = prompt("Give ma number.");
-var num2 = prompt("Give me another number.");
-
-//create function takes askName variable and return a sentence that says" You are going to have a wonderful day.
-
-function createGreeting(name) {
-    return "You are going to have a wonderful day" +name + ".";
-
+// Function to prompt the user name
+function askForName() {
+    return prompt("Tell me your name:");
 }
 
-function calculateSum(num1, num2) {
-    // parse the user input as number
-    num1 = parseInt(num1);
-    num2 = parseInt(num2);
+// Function to prompt the user for a number and handle invalid inputs using parseFloat & not a num function
 
-    if(isNaN(num1) || isNaN(num2)) {
-        return "Error: Enter valid numbers."
-    } 
+function getValidNumber(promptMessage) {
+    const input = prompt(promptMessage);
+    const number = parseFloat(input);
 
-    var sum = num1 + num2;
-    return "By the way, the sum of your numbers is " + sum + ".";
+    if (isNaN(number)) {
+        return getValidNumber(promptMessage);
+    }
+
+    return number;
 }
 
+// Function to prompt the user for two numbers and return the sum
+function getSumOfNumbers() {
+    const num1 = getValidNumber("Give me a number:");
+    const num2 = getValidNumber("Give me another number:");
+
+    return num1 + num2;
+}
+
+// action function to execute the functionality
+
+function action() {
+    const name = askForName();
+    if (name) {
+        const greeting = `You are going to have a wonderful day, ${name}.`;
+        alert(greeting);
+    } else {
+        alert("You didn't provide a valid name.");
+        return;
+    }
+
+    const sum = getSumOfNumbers();
+    if (!isNaN(sum)) {
+        const sumSentence = `By the way, the sum of your numbers is ${sum}.`;
+        alert(sumSentence);
+    } else {
+        alert("Invalid numbers provided. Please enter valid numbers.");
+    }
+}
+
+// Call the action function to start the process
+action();

@@ -1,65 +1,36 @@
-
-/* for html body height & weidth*/
-html, body {
-    height: 100%;
-
-}
-
-/* For homepage backgroung:use id background1 and add url path from Assets folder. And center will set the image, not going to repeated, whole image will be visible*/
-/* background color white so we can see the text white color & set background image's height, width */
-/*display: flex property in CSS is used to create a flexible box layout,  
-It allows us to easily create responsive and flexible layouts by distributing space among the items 
-within a container*/
-
-#background1 {
-    background: url('Assets/Js_background1\ \(1\).jpg') center center no-repeat;
-    color: white;
-    height: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
     width: 100%;
-    display: flex;
-/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
-flex direction is set to column */
-    align-items: center;
-}
-
-
-#message{
-    width: 500px;
-    font-weight:900px;
-    font-size: 54px;
-    
-/* All text transform uppercase letter*/
-    text-transform: uppercase;
-/* All text aligned in center.*/
+    height: 100vh;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    
-    
-     
-}
-
-
-
-#background2 {
-    background: url('Assets/Js_background2\ \(1\).jpg');
+    font-size: 54px;
+    width: 900px;
     color: white;
-    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .background-images img {
+    position: absolute;
     width: 100%;
-    display: flex;
-/* It aligns the items vertically when the flex direction is set to row and horizontally when the 
-flex direction is set to column */
-    align-items: center;
-}
-
-#message1{
-    width: 500px;
-    font-weight:900px;
-    font-size: 54px;
-    
-/* All text transform uppercase letter*/
-    text-transform: uppercase;
-/* All text aligned in center.*/
-    text-align: center;
-    
-    
-     
-}
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .background-images img.active {
+    opacity: 1;
+  }
+ 

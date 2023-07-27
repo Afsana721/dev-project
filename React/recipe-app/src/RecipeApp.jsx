@@ -1,4 +1,6 @@
 
+import './components/Recipe'
+
 import '../RecipeApp.css'
 import Recipe from './Recipe'
 

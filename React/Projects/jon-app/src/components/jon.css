@@ -1,0 +1,46 @@
+.container {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.title {
+    /* margin-top: auto;
+    margin-left: 50%;
+ */
+    text-align: center;
+}
+
+.myImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img {
+    width: 280px;
+    height: 280px;
+    border: 4px solid blue;
+    margin-left:  50%;
+    margin-top: auto;
+} */
+
+p {
+    text-align: center;
+    align-items: center;
+
+}
+
+.list {
+    text-align: center;
+    align-items: center;
+}
+
+dt {
+    text-align: center;
+    align-items: center;
+}
+
+#hate {
+    text-align: center;
+}

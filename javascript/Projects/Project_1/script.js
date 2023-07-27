@@ -9,3 +9,4 @@ function greetingsInfo() {
     var message = "Hi there " + name + ", it seems that you enjoy eating " + snack + " and drinking " + drink + "!";
     alert(message);
 }
+ 

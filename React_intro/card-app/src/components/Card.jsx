@@ -8,7 +8,7 @@ const todoTitle = "Call Family"
   const currentYear = date.getFullYear();
 
 // create a function for the card component, so that we can reuse it. 
-// create a function name as Card and get return card component code value, so we can use it multiple time.
+// create a function name as Card and get the return card component code value, so we can use it multiple time.
 
   function Card() {
 
