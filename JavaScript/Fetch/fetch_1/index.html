@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <img src=""  id="rainbow" />
+
+    <script>
+        console.log("about to fetch a rainbow");
+
+        fetch("./Assets/rainbow.jpg")
+        .then(res => {
+            console.log(res);
+            return res.blob();
+        })
+        .then(blob => {
+            console.log(blob);
+            document.getElementById("rainbow").src = URL.createObjectURL(blob);
+            
+        })
+        .catch(error => {
+            console.log("error");
+        });
+    </script>
+    
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

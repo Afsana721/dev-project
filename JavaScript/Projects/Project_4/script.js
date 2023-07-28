@@ -23,6 +23,6 @@ function rotateImage() {
 
 }
 
-// create interval function to set time to ratate image. 
+// create interval function to set time to rotate image. 
 
-setInterval(rotateImage, 3000);
+setInterval(rotateImage, 1000);

@@ -1,14 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
+const myUser ='piyush'
+
 function App() {
+  //mockdata helps to display initial items
   const mockData = [
     { id: 1, description: "Visit New Zealand", isComplete: false },
     { id: 2, description: "Backpack through Europe", isComplete: false },
   ];
 
+  useEffect(
+    () => {
+      fetch(`https://accbucketlists-3d666dd75daa.herokuapp.com/${myUser}/bucket`)
+      .then(
+      //got a successful response from the fetch
+      res => res.json()
+        
+      )
+      //array of items for a user returned by the backend
+      .then(data =>setTodos(data)
+      )
+      //if somthing goes wrong, like statusCode is not 1xx, 2xx, 3xx depends on the http call
+      .catch(
+        err => {
+          console.log('fetch from teh effect failed:', err)
+        }
+      )
+    },
+    //dependancy arry
+    //1.put something in it, then useEffect will run if that something changes
+    //2. runs once initially when the component is loaded (if it's an empty array)
+    //3. runs every time the render happens (very freq) (if this array is completely omitted)
+
+    []
+  )
+
+  //todo
   const [todos, setTodos] = useState(mockData);
   //You copy what the user typed in the input box
   const [newTodo, setNewTodo] = useState("");
@@ -16,7 +46,7 @@ function App() {
   const handleChange = (event) => {
     setNewTodo(event.target.value);
   };
-
+//submit items
   const handleSubmit = (event) => {
     event.preventDefault();
     const newTodos = [...todos, { id: Date.now(), description: newTodo, isComplete: false }];
@@ -66,7 +96,7 @@ function App() {
     );
   });
 
-
+//renders teh collection of item
   return (
     <div>
       <form onSubmit={handleSubmit}>
