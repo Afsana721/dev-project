@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchSample</title>
+</head>
+
+<body>
+    <!--Add a image tag where image will display-->
+    <img src="" id="rainbow" style="width: 600px; height: 600px;" />
+
+
+    <!--use script tag as a interanl jS inside html -->
+
+    <script>
+        console.log("About rainbow fetch")
+        fetch('Assets/Rainbow1.jpg')
+            .then(response => {
+                console.log(response);
+                //Asking return response as blob image file, and return comes another promise 
+                return response.blob();
+            }).then(image => {
+                console.log(image);
+                //get image data but the image data formate isn't that the dom accepts. So use URL object to create an image data that DOM can accept.
+                //tells where blob object will added by using specify html attribute
+                document.getElementById("rainbow").src = URL.createObjectURL(image);
+            })
+
+    </script>
+
+</body>
+
+</html>
