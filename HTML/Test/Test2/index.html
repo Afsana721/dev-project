@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3><strong>HTML FORM</strong></h3>
+    <!--Create div container, inside html form with input tag-->
+    <div class="container">
+        
+      <!--To send the form to backend, need action and method like get /post-->
+        <form action="/" method="GET">
+    <!--Add some text using p tag, add name attribute, pattern & required attribute, use minlength & maxlength for user input-->
+            
+            <p>Name</p>
+            <input type="text" user="username" minlength="5" maxlength="20">
+            <p>Password</p>
+            <input type="password" name="password" required>
+            <p>Email</p>
+            <input type="email" name="email" required>
+            <p>Phone</p>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

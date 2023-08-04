@@ -1,0 +1,23 @@
+
+h3 {
+    margin-left: 25%;
+    color: blueviolet;
+}
+
+.container {
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+    background-color: #ede2f8;
+    border: 4px solid hsl(318, 89%, 75%);
+}
+
+form {
+    padding: 20px;
+}
+
+input {
+    border: 2px solid coral;
+    background-color: white;
+}
