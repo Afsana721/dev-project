@@ -1,0 +1,35 @@
+/* make a block for div elements */
+.container {
+    padding: 20px;
+    border: 4px solid sandybrown;
+    margin-top: 20px; 
+    margin-left: 20px; 
+    background-color: #ecf9d9;
+    width: 600px;
+    height: auto;
+}
+
+/* give margin left for h3 header */
+h3 {
+    margin-left: 20px;
+}
+
+/* change color & font weigt for select items */
+select {
+    color: rgb(53, 18, 211);
+    font-weight: bold;
+}
+
+/* change the color for option dropdown bar */
+option {
+    color: brown;
+    background-color: #bff1ba;
+}
+
+/* change button css properties.
+button {
+    width: 100px;
+    color:brown;
+    font-weight:bold;
+    background-color: lightcyan;
+}

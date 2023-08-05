@@ -1,0 +1,13 @@
+<h1>Todo List</h1>
+<!-- views/index.html -->
+<form action="/add" method="post">
+    <input type="text" name="task" placeholder="Enter a task">
+    <button type="submit">Add</button>
+  </form>
+<ul>
+    <% tasks.forEach(task=> { %>
+        <li>
+            <%= task %>
+        </li>
+        <% }); %>
+</ul>

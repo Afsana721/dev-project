@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Summer Camp Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Create a header-->
+    <h3>Summer Camp Registration</h3>
+
+    <!--Create div section to create from, take a class for div to control div section-->
+    <div class="container">
+        <div>
+            <label for="First">First Name</label>
+            <input type="text" id="First" name="firstname" required>
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="lastname" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <br>
+        <!--Create radion button for user choice-->
+        <p>Select a month:</p>
+        <div>
+            <input type="radio" name="month" id="June" value="June">
+            <label for="june">June</label>
+        </div>
+
+        <div>
+            <input type="radio" name="month" id="july" value="july">
+            <label for="july">July</label>
+        </div>
+        <div>
+            <input type="radio" name="month" id="aug" value="aug">
+            <label for="aug">August</label>
+        </div>
+<!--Create dropdown to select user choice-->
+        <div>
+           <label for="age">Select Age Group</label>
+           <select name="age" id="age">
+            <option value="kids">Under 18</option>
+            <option value="youngadult">18-30</option>
+            <option value="adults">30-50</option>
+            </select>
+    <!--Create br tag for spacing, then create registration button to  user click after passing data-->
+            <br><br>
+            <button>Register</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

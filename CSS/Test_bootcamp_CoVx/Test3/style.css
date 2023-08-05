@@ -1,0 +1,40 @@
+/* html div elements positioning for relative & absolute used div1, div2 classes. 
+Here div1 will move down to make top 60 px, because it is relative to get access css top, bottom, right & 
+left properties, so It will rise above the red div2 and 100px left also*/
+
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    background: green;
+    position: relative;
+    top: 60px;
+    left:100px
+}
+
+.div2 {
+    height: 200px;
+    width: 200px;
+    background: red;
+
+}
+
+/* Absolute Positioning- allow us to move an element inside of a parent element, used div class container as parent 
+    and div class innerdiv as child*/
+
+.container {
+    height: 300px;
+    width: 300px;
+    background: grey;
+    position: relative;
+}
+
+.innerdiv {
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: absolute;
+    /*top: 30px;
+    bottom: 0;*/
+    right: 0;
+}

@@ -1,0 +1,28 @@
+
+/* add css selector and focus hover selector */
+h1:hover {
+    background-color: rgb(241, 213, 241);
+}
+
+button:hover {
+    color: #ca3706;
+}
+/* use focus selector */
+input:focus {
+    padding-bottom: 100px;
+}
+
+
+input:focus {
+    background-color: red;
+}
+
+button:active {
+    background-color: burlywood;
+    font-size: 40px;
+}
+
+/* use active selector */
+h1:active {
+    font-size: 100px;
+}
