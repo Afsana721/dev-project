@@ -1,0 +1,26 @@
+
+<%- include("layout/header") %>
+    <main>
+        <form action="/" method="post">
+            <input type="text" placeholder="programming language" name="pLangauge">
+            <button type="submit">Add</button>
+        </form>
+        <ul>
+            <!-- send array data using plNames key -->
+            <!--make a condition for list <li> tag, if data available or not-->
+            <!--<li><%= plNames %></li>-->
+            <!--manipulate list li tag by for loop-->
+
+            <% if(plNames.length> 0) { %>
+                <% for(let x=0; x <plNames.length; x++){ %>
+                    <li>
+                        <%= plNames[x] %>
+                    </li>
+                    <% } %>
+                        <% }else { %>
+                            <p>No data found</p>
+                            <% } %>
+        </ul>
+    </main>
+
+ <%- include("layout/footer") %>

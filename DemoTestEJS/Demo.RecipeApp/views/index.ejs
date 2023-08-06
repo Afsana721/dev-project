@@ -1,0 +1,58 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Application</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+  <div class="food-image">
+    <!-- Container for the image and buttons -->
+    <div class="image-container">
+      <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg" alt="Food Image">
+      <div class="buttons">
+        <button>Find Food</button>
+        <button onclick="goToContact()">Go to Contact Page</button>
+        <button onclick="goToFoodList()">Go to Food List</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- Add other content here -->
+  <script>
+    function goToContact() {
+      window.location.href = "/contact";
+    }
+
+    function goToFoodList() {
+      // Use Fetch API to get food data from the API
+      fetch('/api/food')
+        .then(response => response.json())
+        .then(data => {
+          // Handle the food data and navigate to the food list page
+          // Example: window.location.href = "/food-list";
+        })
+        .catch(error => console.error(error));
+    }
+  </script>
+</body>
+</html>
