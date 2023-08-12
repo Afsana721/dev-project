@@ -1,6 +1,6 @@
 
 /* for color: https://www.color-hex.com/color/8b0000 */
-
+/* Header for background of Home page */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
     position: relative;

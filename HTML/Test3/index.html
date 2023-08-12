@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactPage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <img src="Assets/contactBackground.jpg" alt="Snow" style="width:100%;">
+
+    <div class="contact-right">Contact Us</div>
+    <div class="bottom-right">
+      <p>“Please fill out the <br> following form if you <br> have any issues.”</p>
+    </div>
+    <span class="question-icon1">&#63;</span>
+    <span class="question-icon2">&#63;</span>
+    <span class="question-icon3">&#63;</span>
+    <div class="ques">
+      <h1>Questions</h1>
+    </div>
+  </div>
+ 
+
+
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="/submit-contact" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="concerns">Your Concerns:</label>
+      <textarea id="concerns" name="concerns" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+
+</div>
+</body>
+
+</html>
