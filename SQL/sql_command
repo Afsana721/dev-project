@@ -1,0 +1,202 @@
+Select * from hr.todos;
+select * from employees
+
+select country_name, region_id From hr.countries;
+
+-- SELECT * | {[ DISTINCT ] COLUMN | expression [alias], ...}
+-- From hr.countries;
+
+SELECT country_name, region_id FROM hr.countries
+WHERE region_id <3;
+
+SELECT country_name, region_id FROM hr.countries
+WHERE region_id =3 or region_id =5;
+
+SELECT department_id, first_name FROM hr.employees;
+SELECT department_id FROM hr.employees;
+SELECT DISTINCT department_id, manager_id FROM hr.employees;
+SELECT employee_id, last_name, salary, commission_pct FROM hr.employees 
+WHERE commission_pct IS NOT NULL;
+
+--NOT OPERATOR 
+SELECT employee_id, last_name, salary, commission_pct FROM hr.employees
+WHERE commission_pct IS NOT NULL OR (salary >1000 AND hire_date > '31-Dec-98');
+
+--EQUAL OPERATOR =
+Select first_name FROM hr.employees 
+WHERE department_id = 80;
+
+--GREATER THAN   OPERATOR >
+SELECT last_name, first_name, salary
+FROM employees
+WHERE salary > 8000;
+
+--SQL WILDCARD LIKE OPERATOR
+SELECT first_name, last_name
+FROM employees
+WHERE lower(last_name) LIKE '%n';
+
+--GORUP FUNCTION COUNT() Alias
+SELECT COUNT(*) AS "Total employees"
+FROM employees
+WHERE last_name LIKE 'K%';
+
+SELECT COUNT(*) AS total_managers
+FROM employees
+WHERE manager_id IS NOT NULL;
+
+SELECT COUNT(*) AS total_managed_employees
+FROM employees
+WHERE manager_id IS NOT NULL;
+
+SELECT COUNT(DISTINCT manager_id) AS total_managers
+FROM employees
+WHERE manager_id IS NOT NULL;
+
+--Name of manager
+SELECT DISTINCT M.first_name AS manager_first_name, M.last_name AS manager_last_name
+FROM employees AS E
+JOIN employees AS M ON E.manager_id = M.employee_id
+WHERE E.manager_id IS NOT NULL;
+
+-- SQL comparisons
+SELECT country_name, region_id FROM hr.countries
+WHERE region_id >3;
+
+SELECT department_id, first_name from employees;
+SELECT DISTINCT department_id, manager_id from employees;
+
+SELECT employee_id, last_name, salary commission_pct FROM employees
+WHERE commission_pct IS NOT NULL;
+
+
+SELECT employee_id, last_name, salary, commission_pct from employees
+WHERE commission_pct IS NOT NULL OR (salary >1000 AND hire_date > '31-Dec-98');
+
+--Where dep=80
+Select first_name from employees
+WHERE department_id =80;
+
+SELECT COUNT(*) AS total_managers
+FROM employees
+WHERE manager_id IS NOT NULL;
+
+SELECT COUNT(DISTINCT manager_id) AS total_managers
+FROM employees
+WHERE manager_id IS NOT NULL;
+
+SELECT first_name, last_name, salary, commission_pct
+FROM employees LIMIT 10;
+
+SELECT lname, team_id FROM players;
+
+SELECT lname, COALESCE(team_id, 5) FROM players
+WHERE team_id IS NULL;
+
+SELECT first_name, UPPER(last_name) from employees;
+
+Select MAX(salary) FROM employees;
+
+SELECT employee_id, MAX(salary) FROM employees;
+
+SELECT job_id, MAX(salary) FROM employees
+GROUP By job_id;
+
+
+--Employees each department_id
+SELECT department_id, job_id, COUNT(*) AS total_employees
+FROM employees
+WHERE job_id IN ('IT_PROG', 'AC_MGR')
+GROUP BY department_id, job_id;
+
+SELECT department_id, job_id, COUNT(*) AS total_employees
+FROM employees
+WHERE job_id='IT_PROG'
+GROUP BY department_id, job_id;
+
+--Total 
+SELECT COUNT(*) AS total_IT_PROG
+FROM employees
+WHERE job_id = 'IT_PROG';
+
+-- each department how many of job id
+SELECT job_id,count(*) from employees
+GROUP BY job_id;
+
+
+-- Orde By ASC and DESC
+SELECT last_name, first_name, job_id, salary from employees
+ORDER BY 
+last_name ASC, first_name DESC;
+
+--Exercise
+-- Order By city
+SELECT *
+FROM locations
+ORDER BY city ASC;
+
+-- Order by postal_code
+SELECT *
+FROM locations
+ORDER BY postal_code DESC;
+
+--Order by DESC country id and ASC postal_code
+SELECT *
+FROM locations
+ORDER BY country_id DESC, postal_code ASC;
+
+--timestamp
+SELECT now();
+
+SELECT ROUND(453.141592, 4);
+
+SELECT TRUNC(453.141592, 4);
+SELECT TRUNC(453.141592, -1);
+SELECT MOD(16, 5) Remains;
+
+--Floor single row function
+SELECT FLOOR(453.141592);
+
+SELECT hire_date FROM employees
+WHERE employee_id =200;
+
+--CONCAT(first_name, ' ', last_name) to create the "Full Name" field
+--CONCAT function for "Seniority," the CASE statement
+SELECT 
+    CONCAT(first_name, ' ', last_name) AS "Full Name",
+    CONCAT(
+        CASE 
+            WHEN hire_date < '2001-01-01' THEN 'Senior'
+            WHEN hire_date >= '2001-01-01' AND hire_date <= '2007-12-31' THEN 'Mid'
+            WHEN hire_date > '2007-12-31' THEN 'Junior'
+            ELSE 'Unknown'
+        END,
+        ' Employee'
+    ) AS Level
+FROM employees;
+
+
+--CASE
+--first_name || ' ' || last_name combines first_name
+SELECT 
+    first_name || ' ' || last_name AS "Full Name",
+    CASE 
+        WHEN hire_date < '2001-01-01' THEN 'Senior Employee'
+        WHEN hire_date >= '2001-01-01' AND hire_date <= '2007-12-31' THEN 'Mid Employee'
+        WHEN hire_date > '2007-12-31' THEN 'Junior Employee'
+        ELSE 'Unknown Employee'
+    END AS Level
+FROM employees;
+
+--Date & Time Fnction
+select now();
+
+SELECT floor(extract(epoch from now() ))
+
+--Department id
+
+SELECT * FROM employees
+WHERE department_id = 110
+ORDER BY employee_id;
+
+

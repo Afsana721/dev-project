@@ -1,13 +1,12 @@
-
+/* CSS - Header for background of Home page */
 /* for color: https://www.color-hex.com/color/8b0000 */
-/* Header for background of Home page */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 600px;
+    width: 1100px;
+    height: 700px;
     padding: 40px;
 }
 

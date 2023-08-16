@@ -1,0 +1,4 @@
+Detail function working here
+
+    GET: Retrieve all Items using a route ('/bucket') -> the function is called whenever a client sends a GET request
+    to the PORT & added '/bucket' -> route

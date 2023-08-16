@@ -4,35 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ContactPage</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contact Page</title>
+  
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
   <div class="container">
-    <img src="Assets/contactBackground.jpg" alt="Snow" style="width:100%;">
+    <!-- Background image -->
+    <img src="Assets/contactBackground.jpg" alt="Background Image" style="width:100%;">
 
+    <!-- Contact header -->
     <div class="contact-right">Contact Us</div>
-    <div class="bottom-right">
+
+    <!-- Bottom-right text -->
+    <div class="text-right">
       <p>“Please fill out the <br> following form if you <br> have any issues.”</p>
     </div>
+
+    <!-- Question icons -->
     <span class="question-icon1">&#63;</span>
     <span class="question-icon2">&#63;</span>
     <span class="question-icon3">&#63;</span>
+
+    <!-- Questions title -->
     <div class="ques">
-      <h1>Questions</h1>
+      <h1 class="quesText">Questions</h1>
     </div>
   </div>
- 
 
-
-
+  <!-- Contact form -->
   <div class="contact-form">
     <h2>Contact Us</h2>
     <form action="/submit-contact" method="post">
@@ -50,9 +53,8 @@
 
       <button type="submit">Submit</button>
     </form>
+  </div>
 
-
-</div>
 </body>
 
 </html>

@@ -8,7 +8,8 @@ const router = express.Router();
 
 //create register route
  router.get("/register", (req, res) => {
-     res.send("I am a register route");
+    res.statusCode =200;
+    res.send(__dirname + "/views/register.html");
      
  });
 

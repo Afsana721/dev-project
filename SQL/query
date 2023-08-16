@@ -1,0 +1,3 @@
+SELECT * from hr.countries;
+
+SELECT * from hr.accounts;

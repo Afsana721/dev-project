@@ -1,0 +1,9 @@
+
+Delete route: Delete request to remove a specific item from the bucket list based on its ID. 
+It follow similar pattern 
+
+1. It gets the ID of the item to be deleted from the request parameters
+2. it checks if the ID is valid and numeric
+3. It searchs for the index of the item in the bucketListArray.
+4. If the item is found, it is removed from teh array using the  'splice' method
+The deleted item is sent back as a JSON response to the client. 

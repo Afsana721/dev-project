@@ -1,0 +1,10 @@
+Structure of routes
+app.js: -->
+-app.use("/api/user/", userRoute);
+-app.use("/api/admin/", adminRoute);
+-app.use("/api/teacher/, techerRoute)
+
+routes: -->
+-user.route.js
+-admin.route.js
+-techer.route.js
