@@ -1,7 +1,8 @@
 {
-  "name": "areacalculatorproject",
+  "name": "lesson10",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "intex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
@@ -12,6 +13,5 @@
   "dependencies": {
     "express": "^4.18.2",
     "nodemon": "^3.0.1"
-  },
-  "description": ""
+  }
 }
