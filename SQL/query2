@@ -1,0 +1,46 @@
+SELECT * from employees
+Where last_name ='Fay';
+
+SELECT * from hr.employees
+WHERE last_name like '%Fay';
+
+SELECT * from hr.employees
+WHERE lower(last_name) like '%Fay';
+
+SELECT * FROM employees WHERE salary > 10000 AND last_name LIKE 'H%';
+
+SELECT * FROM employees WHERE salary > 10000 OR last_name LIKE 'H%';
+
+SELECT * FROM employees 
+WHERE 
+--salary > 10000 OR 
+last_name LIKE 'H%';
+
+SELECT * from hr.employees;
+
+INSERT INTO employees (
+    employee_id,
+    first_name, 
+    last_name, email, 
+    phone_numeric, 
+    hire_date, 
+    job_id, 
+    salary, 
+    commission_pct, 
+    manager_id,
+    department_id)
+VALUES (
+    2000,
+    'Afsana', 
+    'Afroze', 
+    'af@gmail.com', 
+    '11225566', 
+    '2013-11-11', 
+    'IT_PROG', 
+    1000, 
+    0.35, 
+    102, 60 )
+    RETURNING *;
+
+
+

@@ -1,8 +1,8 @@
 
 //create three variables
-var url1 ="Assets/Js_background1 (1).jpg";
-var url2 = "Assets/Js_background2 (1).jpg";
-var url3="Assets/Js_background3 (1).jpg" ;
+var url1 ="./Assets/background1.jpg";
+var url2 = "./Assets/background2.jpg";
+var url3="./Assets/background3.jpg" ;
 
 //create image Array using three variable
 var imageArray = [url1, url2, url3];

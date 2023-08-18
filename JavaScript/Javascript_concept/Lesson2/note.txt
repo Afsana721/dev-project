@@ -1,0 +1,71 @@
+we can declare variable without declare datatype.
+REPL: Read Eval Print Loop - we can use dev tool to use javascript console
+Operators:  typeof  instanceof with are represent by string keywords not character
+expression: In JavaScript, an expression is a piece of code that produces a value. It can be as simple 
+as a single constant value or a more complex combination of variables, operators, and functions that are evaluated to result in a value.
+Example: 
+Numeric Expression-- 5 + 3 * 2
+String Expression-- "Hello, " + "world!"
+Variable Reference-- let x = 10;  and x * 2
+Function Call-- Math.sqrt(25)
+
+Conditional Expression (Ternary Operator)-- age >= 18 ? "Adult" : "Minor"  --> 
+Let's break down the expression:
+age: This refers to a variable that presumably holds the age of a person.
+age >= 18: This is the condition being evaluated. It checks if the value of age is greater than or equal to 18.
+If the condition is true (meaning the person's age is 18 or greater), the value "Adult" will be returned. 
+If the condition is false (meaning the person's age is less than 18), the value "Minor" will be returned.
+
+Array Element Access-- let arr = [1, 2, 3];  find array value -  arr[1];
+Object Property Access-- let person = { name: "John", age: 30 };   find person Property - person.name
+Logical Expression-- (x > 5) && (y < 10)
+Assignment Expression-- let total = price * quantity;
+
+
+Function: JavaScript is a functional programming language. So, function are first class citizen of the language.
+There is a very thin line between objects and function in JavaScript.We can create function as data or object which
+means we can even pass the function itself as an argument to a functon.
+Example: 
+function namefunction () {
+    return 1;
+}
+namefunction();
+also: var x = namefunction();
+
+Block Scope: ??
+
+Type Conversion: "4" * "6" ->24  or "4" * 6  ->24 -- allow but if -> "4" +"6" -> 46 -jsut added both strings.
+
+
+Object & its properties
+JSON
+Array
+Commonly used function
+
+What are JS Object: JavaScript provides a general object data wiich is basically an unorderd collection of properties
+and each property has name & value. 
+Object: var name = {};  empty object.
+var car = {
+    color : "green",
+    brand: "toyota",
+    model: "dx"
+};
+
+another way to create object
+var car = new Object();
+Example: 
+var car = new Object();
+car;
+
+car.color = "red";
+car.model ="wy";
+car.brand = "Honda";
+
+car;
+
+
+create object by 
+var x = Object.create(null);   //empty object
+
+
+

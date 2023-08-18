@@ -1,0 +1,12 @@
+Benifits of Learning MERN Stack
+
+MERN: is full stack, following the troditional 3-tier architectural pattern, including the front-end display 
+tier(React.js), application tier(Express.js and Jode.js) and database tier(MongoDB)
+
+MongoDB works extremely well with NOde.js and makes storing, manipulatin , and representing JSON data at every tier of our 
+application incredibly easy. 
+
+Express.js(running on Node.js) and React.js make the Javascript/JSON application MERN full stack, well, full, Express.js is a server
+-side application framework that wraps HTTP requests and responses, and makes it easy to map URLs to serve-side functions. 
+React.js is a forntend Javascript framework for building interactive user interfaces in HTML< and communicating
+with a remote server.

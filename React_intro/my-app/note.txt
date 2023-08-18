@@ -1,0 +1,20 @@
+JXS: we can write HtML code in Javascript and React works with Babel.
+And we can also write js code in HTML. 
+
+like: const todoTitle = "Call family";
+
+ReactDOM.render(
+    <div>
+    <h1>Todo APP</h1>
+    <h3>{todoTitle}</h3>                //use JavaScript code inside HTML
+    <p>Hello all, how are all!</p>
+    </div>
+)
+
+ Babel is a widely used JavaScript compiler that is often associated with React and modern JavaScript 
+ development. 
+ Babel:
+Babel is a tool that helps developers write modern JavaScript code while ensuring that it can be run on older 
+browsers that might not support the latest JavaScript features. It's commonly referred to as a "transpiler" 
+or "compiler" because it takes in modern JavaScript code (written in the latest ECMAScript standards) and 
+transforms it into an older version of JavaScript that's compatible with a wider range of browsers.
