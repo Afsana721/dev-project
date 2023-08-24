@@ -1,0 +1,14 @@
+Props are object that hold infomation to control behaviour of a component. But problem with Props
+is that they are immutable. 
+
+State is also an object tht holds some information but that infomation may change over the lifetime
+of the component. That makes state more dynamic to use.
+
+Props: Passed to the component. So a component is nothing but a function, it's like a parameter which
+is being passed to that function. Props behaviour similar function. Props are immutable. Props can be accessed 
+as props -> this.props. They are like parameters passed to a function. 
+
+State: Contained inside component.State can be change. 
+Function: useState Hook
+Class: this.state
+State like-> they are like variables declared in the function body. 

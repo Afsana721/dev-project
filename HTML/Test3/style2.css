@@ -2,7 +2,7 @@
 .mainContainer{
     display: flex;
     justify-content: center;
-    position: relative;
+    /*position: relative;*/
     color: white;
     top: 60px
 }
@@ -10,7 +10,7 @@
 
   
   .container {
-    position: absolute;
+    /*position: absolute;*/
     display: flex;
     left: 0px;
     width: 900px;
@@ -20,7 +20,7 @@
   
    
   .contact-right {
-    position: absolute;
+    /*position: absolute;*/
     top: 180px;
     right: 130px;
     font-size: 28px;
@@ -30,7 +30,7 @@
   }
   
   .text-right {
-    position: absolute;
+    /*position: absolute;*/
     top: 220px;
     right: 90px;
     color: #22AD1F;

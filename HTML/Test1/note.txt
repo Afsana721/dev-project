@@ -1,0 +1,14 @@
+Footer: 
+Step1: .socialIcoms a: This rule applies to the anchor tags wrapping the icons. I added the transition property to create a
+ smooth transition effect when the background color changes. The original background color was set to white, which 
+ was causing the icons to have a white background.
+
+Step2: .socialIcoms a i: This rule applies to the icons within the anchor tags. I set the color property to black with an 
+opacity of 0.9 to match the original styling. I also added the transition property for a smooth color change effect.
+
+Step3: .socialIcoms a:hover: This rule applies when hovering over the anchor tags (icons). I changed the background-color 
+to transparent using the rgba value (0 alpha), which means the background will gradually fade out and become completely 
+transparent on hover.
+
+Step4: .socialIcoms a:hover i: This rule applies to the icons within the anchor tags when hovering. I changed the color property 
+to white on hover to ensure the icons are visible against the dark background.

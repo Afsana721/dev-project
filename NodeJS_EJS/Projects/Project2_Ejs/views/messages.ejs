@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Display a heading for the messages page -->
+    <h1>Messages</h1>
+
+    <!-- Loop through each message in the "messages" array -->
+     <!-- Display the message using the name and message properties -->
+    <% messages.forEach(function(message) { %>
+        <p>Hi, my name is <%= message.name %>. <%= message.message %></p>
+    <% }); %>
+</body>
+</html>

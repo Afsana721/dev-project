@@ -1,0 +1,50 @@
+
+/* Contact page CSS Style from here: */
+/* set image */
+.container img {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    object-fit: cover;
+  }
+  
+  /* Right section: Contact Us */
+  .contact-right {
+    position: absolute;
+    top: 180px;
+    right: 280px;
+    font-size: 28px;
+    color: #990000;
+    font-weight: bold;
+    font-family: 'Courier New', Courier;
+  }
+  
+  /* Bottom-right text */
+  .text-right {
+    position: absolute;
+    top: 240px;
+    right: 260px;
+    color: #22AD1F;
+    font-size: 24px;
+  }
+  
+  
+  
+  /* Media query for smaller screens - adjustment*/
+  @media (max-width: 768px) {
+  
+    /* Adjust the styles for smaller screens */
+    .contact-right {
+      font-size: 22px;
+      top: 56px;
+      right: 58px;
+      /* Adjust this value as needed */
+    }
+  
+    .text-right {
+      font-size: 16px;
+      top: 90px;
+      right: 70px;
+      /* Adjust this value as needed */
+    }
+  }

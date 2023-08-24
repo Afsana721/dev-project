@@ -21,33 +21,89 @@ footer {
     justify-content: center;
 }
 
+/*.socialIcoms a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}*/
+
 .socialIcoms a {
     text-decoration: none;
     padding: 10px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
+    transition: background-color 0.5s; /* Added transition for background color */
+}
+
+/* .socialIcoms a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+   
+} */
+
+.socialIcoms a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    transition: color 0.5s; /* Added transition for icon color */
+}
+
+
+/* Hover Effects on soical media icons*/
+/* .socialIcoms a:hover {
+    background-color: #111;
+    transition: 0.5s;
+} */
+
+.socialIcoms a:hover {
+    background-color: rgba(255, 255, 255, 0); /* Background color fades out on hover */
+}
+
+
+/* socialIcoms a:hover i{
+    color: white;
+    transition: 0.5s;
+} */
+
+.socialIcoms a:hover i {
+    color: white; /* Icon color changes to white on hover */
+}
+/* Modified CSS (For Comparison, with Transparent Background): */
+
+css
+Copy code
+/* Modified CSS with transparent background */
+
+.socialIcoms a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s;
 }
 
 .socialIcoms a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
-   
+    transition: color 0.5s;
 }
 
-/* Hover Effects on soical media icons*/
+/* Hover Effects on social media icons */
 .socialIcoms a:hover {
-    background-color: #111;
-    transition: 0.5s;
-
+    background-color: transparent; /* Background color disappears on hover */
 }
 
-socialIcoms a:hover i{
-    color: white;
-    transition: 0.5s;
-
+.socialIcoms a:hover i {
+    color: white; /* Icon color changes to white on hover */
 }
+
+
 
 .footerNav {
     margin: 30px 0;

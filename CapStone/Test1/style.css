@@ -1,0 +1,161 @@
+
+/* location of footer and set all properties */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    /*background-color:  #111;*/
+    background-color: #304146;
+}
+
+.footerContainer {
+    width: 100%;
+    /*padding: 70px 30px 20px;*/
+    padding: 20px 30px;
+}
+
+.socialIcoms {
+    display: flex;
+    justify-content: center;
+}
+
+/*.socialIcoms a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}*/
+
+.socialIcoms a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s; /* Added transition for background color */
+}
+
+/* .socialIcoms a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+   
+} */
+
+.socialIcoms a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    transition: color 0.5s; /* Added transition for icon color */
+}
+
+
+/* Hover Effects on soical media icons*/
+/* .socialIcoms a:hover {
+    background-color: #111;
+    transition: 0.5s;
+} */
+
+.socialIcoms a:hover {
+    background-color: rgba(255, 255, 255, 0); /* Background color fades out on hover */
+}
+
+
+/* socialIcoms a:hover i{
+    color: white;
+    transition: 0.5s;
+} */
+
+.socialIcoms a:hover i {
+    color: white; /* Icon color changes to white on hover */
+}
+/* Modified CSS (For Comparison, with Transparent Background): */
+
+css
+Copy code
+/* Modified CSS with transparent background */
+
+.socialIcoms a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+
+.socialIcoms a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    transition: color 0.5s;
+}
+
+/* Hover Effects on social media icons */
+.socialIcoms a:hover {
+    background-color: transparent; /* Background color disappears on hover */
+}
+
+.socialIcoms a:hover i {
+    color: white; /* Icon color changes to white on hover */
+}
+
+
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* make responsive for other device like mobile. use media query: Media queries allow you to apply CSS styles depending on a device's*/
+@media (max-width:700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
