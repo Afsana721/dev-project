@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4: jQuery Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!--add div, h1 tag and form to make email & password, add button for submit user input-->
+    <div class="head">
+        <h1>Welcome to the Bank</h1>
+        <h3>Login to see your payroll account</h3>
+    </div>
+    <form id="login-form" novalidate>
+        <div>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+        </div><br>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="password-error"></span>
+        </div><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

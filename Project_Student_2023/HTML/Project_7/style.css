@@ -1,0 +1,24 @@
+
+/*footer adj */
+.custom-footer {
+  background-color: rgb(239, 231, 246);
+  box-shadow: 0px 0px 0px #efecf3;
+  border-bottom: 1px rgb(218, 189, 244);
+  padding: 30px;
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+  hr {
+    margin-bottom: 0px;
+    padding: 15px;
+    
+    border-bottom: 20px #7f21d1;
+  }
+
+  /*.custom-footer {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;*/

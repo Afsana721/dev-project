@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+ul {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding-top: 40px;
+    text-align: center;
+    padding: 30px 50px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transform: scale(1.2);
+}
+
+.news a {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
+    font-family: Arial, sans-serif;
+    transform: scale(1.5);
+}
+
+.news i {
+    padding-left: 4px;
+    padding-bottom: 2px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.nav a .techlink {
+    display: inline-block;
+    width: 70px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.nav a .techlink:hover {
+    background-color: #313866;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313866;
+    width: 200px;
+    z-index: 1;
+    top: 100%; /* Adjust dropdown positioning */
+    left: 0;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav .techlink:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #29325B;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,2 @@
+jQuery UI is a library of themes, widgets, effects, Interactions, and other UI's built on the jQuery library.
+We are using Mint-Choc for demo purposes

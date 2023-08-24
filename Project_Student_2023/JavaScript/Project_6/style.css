@@ -1,0 +1,18 @@
+
+/* style the body, use flex box layour for centering the content */
+body {
+    display: flex;
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;            /* Center content vertically */
+    height: 100vh;                  /* set body's height to cover the full viewport height */
+    margin: 0;                      /* remove page default margin */
+}
+
+/* style the clock container */
+.clock {
+    font-size: 3em;                 /* set font size */
+    font-weight: bold;              /* use bold font weight property to clock text */
+    padding: 20px;                  /* add padding around the clock text to create spacing */
+    border-radius: 10px;            /* Round the conrners of the clock container */
+    color: #fff;                  /* set text color to while */
+}

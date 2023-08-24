@@ -1,3 +1,24 @@
+-- Task 1:
+-- Please find all employees that have a salary greater than 30000 and less than 50000
+-- using AND operator
+-- using BETWEEN operator
+SELECT * FROM hr.employees
+WHERE salary > 6000 AND salary < 20000;
+
+SELECT * FROM employees
+WHERE salary BETWEEN 6000 AND 20000;
+
+-- Task 2:
+-- List the employees whose last name is longer than 6 characters.
+-- In this query, return the first 6 characters of their last names, the jobs they perform and their salary.
+-- Hint: find appropriate string functions that would help you get this done.
+
+SELECT 
+    SUBSTRING(last_name, 1, 6) AS shortened_last_name,
+    job_id,
+    salary
+FROM employees
+WHERE LENGTH(last_name) > 6;
 
 SELECT SUBSTRING(last_name, 2,3), first_name, salary, job_id
 FROM hr.employees

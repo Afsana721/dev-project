@@ -42,7 +42,7 @@ allow us to move an element inside of a parent element */
     font-size: 22px;
    
 }
-/*class div4 get its css properties*/
+
 .div4 {
     width: 298px;
     height: 60px;
@@ -54,7 +54,7 @@ allow us to move an element inside of a parent element */
     top: 0px;
     right: 0;
 }
-/*class div5 get its css properties*/
+
 .div5 {
     width: 120px;
     height: 97px;
@@ -66,7 +66,7 @@ allow us to move an element inside of a parent element */
     bottom: 0px;
     left: 230px;
 }
-/*class div6 get its css properties*/
+
 .div6 {
     width: 192px;
     height: 97px;
@@ -78,7 +78,7 @@ allow us to move an element inside of a parent element */
     bottom: 0px;
     left: 355px;
 }
-/*class div7 get its css properties*/
+
 .div7 {
     width: 298px;
     height: 60px;
@@ -90,7 +90,7 @@ allow us to move an element inside of a parent element */
     top: 60px;
     right: 0;
 }
-/*class div8 get its css properties*/
+
 .div8 {
     width: 175px;
     height: 175px;
@@ -104,7 +104,7 @@ allow us to move an element inside of a parent element */
     
     
 }
-/*class div9 get its css properties*/
+
 .div9 {
     width: 125px;
     height: 175px;
@@ -117,7 +117,7 @@ allow us to move an element inside of a parent element */
     font-family: Mansalva;
     font-size: 22px;
 }
-/*class divText get its css properties and adjust */
+
 .divText {
     width: 100px;
     height: 50px;
