@@ -1,0 +1,16 @@
+
+Case 1:Does the HTML below trigger a HTTP GET request for the picture file, when the page first loads?  
+    `<img src="dog.jpg" style="visibility: hidden" alt="my dog">`
+
+    Ans: Yes, the HTML will trigger a HTTP GET request to fetch the 'dog.jpg' image when the page first loads
+    , even throughthe image is hidden using the 'visibility: hidden' CSS style. The browser loads all resouces specified in the 
+    HTML, including images, scripts, stylesheets, so on, regardless of their visibility or display state. 
+
+
+Case 2:Does the HTML below trigger a HTTP GET request for the picture file, when the page first loads?  
+    `<img src="dog.jpg" style="display:none" alt="my dog">`
+
+    Ans:No, image will not trigger HTTP GET request to fetch the 'dog.jpg' image when the page first loads. The
+    reason for this behavior is that the 'display: none'  CSS style completely hides the element from both view and loyout, so 
+    browser doesn't load resouces for element with display:none. 
+    

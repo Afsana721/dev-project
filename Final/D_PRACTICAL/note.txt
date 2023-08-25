@@ -1,0 +1,12 @@
+Step1: create project folder name GIPHY
+Step2: Inside the project directory - run : npm init -y  & npm install express, ejs, node-fetch to initialize
+node modules and create package.json with lock. express package for createing server route, ejs for rendering
+templates & node-fetch for making API requests
+Step3: 
+Project structure: Inside project directory --> create views folder: contains EJS templates, folders & files
+    views -> index.ejs(main page template)
+    partials -> contains header & footer partials
+                header.ejs & footer.ejs
+    public -> contains static assets for CSS, images
+                styles.css our css files
+                main.js client-side js

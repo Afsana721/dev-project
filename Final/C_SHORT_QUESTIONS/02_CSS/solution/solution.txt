@@ -1,0 +1,17 @@
+
+  https://jsbin.com/rufarat/edit?html,output
+
+## Question: 
+
+1. Why can I not set the margin-top on the span with the id "txt" ? 
+
+Ans: Because, there is another margin-top property with another value already declared after the txt #id. 
+Also, margin top doesn't work on inline element like span. I also added image on the img folder to get more 
+clarification. 
+
+1. Why can I not set the margin-top on the img with the id "pic" in the head section?
+ 
+ Ans: Because, we can not set margin-to on the <img> element with the id "pic" in the head seciton of an HTML document,
+ is due to the nature and purpose of <head> section. Head section reserved for meta data. Head section does not server
+ as a rendering context for visual content. It focuses on providing instructions and information to the browser and serch engine. 
+ I added imges on the image folder 

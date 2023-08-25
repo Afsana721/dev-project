@@ -1,0 +1,26 @@
+## Git Question B:
+
+How do you delete a local branch after completing work on it.  How would you delete a remote branch?
+
+Ans: 
+    b1: How do you delete a local branch after completing work on it.
+    First make sure that I am on the master branch, if not then checkout master branch. So to see all branches by
+    git checkout branch
+    git checkout master
+    git branch -d <branch-name> or git branch -D <branch-name>
+
+Ans:
+    b2: How would you delete a remote branch?
+    First push the deletion to the remote repository, this can be done by 
+    git push        then come for the delete section
+    git push origin --delete<remote-branch-name>
+
+    Then I will verify the deletion is happend or not - after pushig deletion reference, the remote branch will be 
+    removed from the remote repository. I can verify by checking the repository on the remote server (github), or 
+    by running 
+    git fetch --prune           prune will remove reference to remote branches that no longer exits. 
+    
+
+
+Project exchangeRate : I tried for a long but after fixing many, still it shows 2 error, I thing there are some file structure
+problem also. 

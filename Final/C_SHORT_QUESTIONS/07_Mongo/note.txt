@@ -1,0 +1,5 @@
+Step1: setup porject- create new directory name social_media, inside social_media - initialize npm by npm init -y and
+        install express, mongoose, morgan dotenv
+Step2: create .env file for sensitive data / infomation
+Step3: create app.js file in project directory and set up express application
+
