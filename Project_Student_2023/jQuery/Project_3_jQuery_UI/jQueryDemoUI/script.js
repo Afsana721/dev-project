@@ -148,5 +148,30 @@ $('#cal').datepicker({
         var day = date.getDay(); // Get the day of the week (0: Sun, 1: Mon, ..., 6: Sat)
         // Return an array with [selectable, CSS class, tooltip] for each date
         return [!(day === 0 || day === 6), '', 'Weekends are not selectable'];
+    },
+    onChangeMonthYear: function(year, month, inst) {
+        // Update the monthSelector with the selected month
+        $('#monthSelector').val(month);
     }
+});
+
+// Populate the monthSelector with month options
+var monthNames = $.datepicker._defaults.monthNames;
+for (var i = 0; i < monthNames.length; i++) {
+    $('#monthSelector').append($('<option>', {
+        value: i + 1,
+        text: monthNames[i]
+    }));
+}
+
+// Set the initial selected month based on the DatePicker value
+var currentDate = $('#cal').datepicker('getDate');
+if (currentDate) {
+    $('#monthSelector').val(currentDate.getMonth() + 1);
+}
+
+// Update DatePicker when month is changed from the drop-down
+$('#monthSelector').change(function() {
+    var selectedMonth = $(this).val();
+    $('#cal').datepicker('setDate', new Date(currentDate.getFullYear(), selectedMonth - 1, 1));
 });

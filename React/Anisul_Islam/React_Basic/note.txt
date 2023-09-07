@@ -1,0 +1,60 @@
+What is React?
+    - React is flexible, efficient , open-source javascript library. 
+    - Reusable component, Load fast, External Plugin, Around 45% of world's website use React
+    - major brands like Facebook, Instagram, Yahoo, Netflix, Airbnb, dropbox using react.
+
+    -It wia developed by Facebook back in 2013 fo rbuinding user interfaces (front end.).
+    - Facebook software Engineer, Jordan Walke, created it.
+Why React?
+    - It allows us to create a complex UI by making components (samll & isolated pieces of code)
+    - Components are reusable.
+Example: 
+    Message.js file has message components
+
+    import React from 'react';
+    export default function Message(){
+        return(
+            <h1 style={{backgroundColor: "red", textAlign: "center"}}>
+            Welcome to React
+            </h1>
+        )
+    }
+So, we can use this message function/ method anywhere again & anagin
+Like: 
+    - < Message />
+    - < Message />
+
+
+What is JSX?
+    - JSX stands for JavaScript XML.
+    - JSX allows us sto write and add HTML in React.
+    - React module has a compiler name babel - it convert HTML code to JavaScript code.
+
+How to use CSS with JSX
+    - Inline style
+    - CSS stylesheet.
+
+Example: We can wirte css code inside JavaScript
+    const handleStyles = {
+        color: "red",
+        fontSize: "3rem"
+    }
+
+In index.JSX  -  and inline CSS
+    ReactDOM.render(
+        <div>
+        //<h1 style={{color: "red", fotSize: "3rem"}}>Todo App</h1>
+        <h1 style={handleStyles}>Todo App</h1>
+        
+    )
+
+    CSS stylesheet : inside public folder create css files and link to index.html and 
+    to access, need to write class name;
+Like: use class name from CSS files
+    ReactDOM.render(
+        <div>
+        <h1 className="handleStyles>Todo App</h1>   or
+        <h1 className="handleStyles   largeText>Todo App</h1>  // use two class
+        
+    )
+

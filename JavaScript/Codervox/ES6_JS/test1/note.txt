@@ -1,0 +1,17 @@
+ES6 Info: Javascript was invented by a programmer named Brenden Eich in 1995, who worked
+for Netscape. Netscape were teh creators of a popular web browser at the time. Javascript
+historically has had multiple names, it was originally called 'Mocha', then 'LiveScript'. 
+Three months after it was released, it was changed to 'Javascript'. 
+
+Organinzation called ECMA international created standared that all browsers could conform to.
+ES6 released 2015, known as ES2015, there is a ES2016(ES7), ES2017(ES8),ES2018(ES9), etc.
+
+Javascript var, let or const to declare variable in Javascript.
+    var - scope-> function, redeclare is yes, & reassign is yes.
+    let - scope-> block, redeclare is no, & reassign is yes.
+    const - scope-> block, redeclare is no, & reassign is no. 
+const is slightly mesleading because it doesn't define a constant value. 
+    It actually defines a constant reference to a value.
+    We can't change privitive datatypes, but we can change the properites of objects
+like: const lunch = {dessert: "chocolate chip muffin"};
+    lunch.dessert = "Oatmeal raisin cookie";

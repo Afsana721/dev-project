@@ -1,0 +1,17 @@
+{
+  "name": "lesson3_externalmodules",
+  "version": "1.0.0",
+  "description": "learning npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Afsana",
+  "license": "ISC",
+  "dependencies": {
+    "movies-names": "^1.1.1",
+    "random-fruits-name": "^1.9.7"
+  }
+}

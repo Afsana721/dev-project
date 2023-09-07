@@ -1,0 +1,21 @@
+
+axios is a javascript library, so we are not getting in window. We need to install it or use CDN. 
+It helps to make request from browser (plain JS/Vue/React/Angualr), mode.js
+
+axios: 
+    very easy to use
+    it supports al modern browser including IE , old browser. Basically, it is based on XMLHttpRequest method.
+    it returns pormise
+    throws error brilliantly
+    No need to set header cause axios is intelligent.
+
+axios methos:
+    axios(config)
+    axios(url, [,config])
+    axios.get(url [,config])
+    axios.post(url [,config])
+    axios.put(url [,config])
+    axios.patch(url [, config])
+    axios.delete(url [, config])
+
+axios returns response object - data, status, statusText, header, config

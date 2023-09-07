@@ -1,0 +1,6 @@
+MVC: Model, views & Controller
+
+Views-http request -> by http://localhost:3000/users to the Router/users(may be get request)-->
+Controller(then it going to Controller) --> Model (if there is any thing to find from Database,
+Model will find them) --> Database(database get request from Model and send response to model).
+--> from Model response will come to Controller, then Controller send the response to the views

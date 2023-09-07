@@ -1,0 +1,130 @@
+Node.js Modules - set of functions that node.js is having
+
+    * Module is a set of cuntions, think about js libraries such as Math.
+3 types of Modules
+    1. Local Modules- own created Modules
+    2. Built-in Modules - node.js own modules: http, url, path,fs (all no need to install)
+    3. External Modules : managed by npm-> need to install them using npm package
+
+Create Modules
+We can create function and use these function from outside files
+By:
+to export functions or variables individually use: 
+Example: 
+    //to use these functions & variable from outside, need to export
+            exports.getName = getName;
+            exports.getPlace = getPlace;
+            exports.phone = phone;
+use more than 
+    //to use my module exports - more than 
+    module.exports = {
+                getName,
+                getPlace,
+                phone
+            }
+
+import: 
+    //import student functions
+
+    //const s1 = require('./student');
+        const {getName} = require('./student');  // use only one (only getName())
+
+    //console.log(s1.getName()+" "+ s1.getPlace()+" "+s1.phone);
+            console.log(getName());     // only one - getName();
+    
+    //use export directly from function or variable
+        exports.getLocation = () =>{
+            return "Texas";
+        }
+
+    import: from imported file
+        const {getLocation} =require('./student');
+        console.log(getLocation());
+
+
+Node Built In Modules: 
+FS Module:  need to require fs : const fs = require('fs');
+
+    Async functions                      Sync functions
+    writeFile()                             writeFileSync()
+    appendFile()                            appendFileSync()                            
+    readFile()                              readFileSync()
+    rename()                                renameSync()
+    Unlink()                                UnlinkSync()
+    Exist()                                 ExistSync()
+
+External Modules for Node.js: https://www.npmjs.com/
+Like: package-random-fruits-name, nodemon
+How to use external modules / packags?
+    -make sure we have initialized the npm (npm init or npm init -y)
+    -then install packages and read the documentation for using packages(npmjs.com)
+
+Learning Outcomes
+-What is routing & how to do it?
+#
+-Install nodemon package : to run server easily 
+-How to get the requested url
+-Reading html files in server based on requested url.
+
+express -> external node module
+Exprss.js - Framework for Node.js -> helps to create and maintain server(server-side-coding)
+     more easily with less effort.
+-Helps to write most of the logics in server side, REST API for mobile, desktop, web
+-Easy to Learn
+-Saves time (many things are already created)
+
+-MERN Stack - MongoDB, Exprss, React, Node
+-NERD Stack - Node, Express, React, Database
+-PERN Stack -PostgreSQL, Express, React, Node
+
+How things work: 
+When we create an application on the forntend we send different request (Http call) to API
+and make a communication to web server, and web server also make connection to database. Then 
+we get request and see the frontend application. 
+
+What is .env file?
+    -.env file full form environment file
+    -Secret / hidden file - Only individual from their project environment can access it. 
+Why .env file?
+    -to store private environmen variables for individual application. 
+Example:
+    -http PORT to listen the server
+    -Database url
+    -API Keys etc. 
+GitLab / Heroku support the usage of environment variables.
+
+How to use .env variables?
+Step1: create an .env file in the root directory
+Step2: define environment variable(s) using uppercase letters and underscore if more than one word.
+    Example:    PORT
+                DATABASE_URL
+Step3:Assign the values withour double quotation and space
+    PORT = 3000
+    DATABASE_URL = mongodb+srv://medo:demo123@cluster0.0t13q.mogodb....
+Step4: we can make a comment using #
+    #SERVER PORT
+    PORT = 3000
+Step5: install dotenv package -> npm install dotenv
+Step6: require dotenv -> require('dotenv').config();
+Step7: Access the env variable from anywhere using process.env.VARIABLE
+    Example: process.env.PORT;
+Optional: DotENV Extention - nice syntax highlighting in our .env files
+
+Types of Middleware:
+    - Third party middleware- body-parser, cookie-parser etc.
+    - Application-level middleware - app.use(), app.METHOD()
+    - Router level middleware - router.use(), router.METHOD()
+    - Error handling middleware
+    - Bulit in middleware - express.static, express.json, Express.urlencoded
+
+What is MVC?          
+MVC Architecture:
+    M - Module
+    V - View
+    C - Controller
+-Separation of Concerns (which part is responsible for what)
+-Models (deals with database)
+-View (what users sees)
+-Routes
+-Controllers (connection point between model and views)
+-Controllers have all the logic

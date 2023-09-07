@@ -1,0 +1,38 @@
+CSS- What is CSS: Cascading Style Sheets
+-CSS is a stylesheet language used to describe the presentation of a document written in HTML
+, or XML. CSS describes how elements should be rendered on screen, on paper, in speech or  on other media.
+
+CSS Cascading means water fall - it works top to down- if we use same selector different value,
+it will work last one (down).
+
+Anatomy of CSS ruleset:
+    * Selector p{
+        color: red;
+        property: property value
+    }
+
+Selector: 
+        *{
+            universal selector- select everything
+        }
+        h1, h2 {
+            both h1 & h2
+        }
+
+         h1 h2 {
+            h2 inside h1
+        }
+
+        p span{
+            span inside p
+        }
+
+        .gray{
+            class indector
+        }
+
+        #high{
+            id indector
+        }
+
+inheritan:

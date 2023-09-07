@@ -1,0 +1,8 @@
+fetch: we get fetch from window object in browser as a global variable.
+fetch() -has replaced XMLHttpRequest
+fetch() -global method for making HTTP Request.
+2 ways to call - then, async await
+fetch() - is easy to use compare to XMLHttpRequest.
+fetch() - returns a promise
+    returned Promise can only handle network error
+    doesn't support all the older browser.

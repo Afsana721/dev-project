@@ -1,0 +1,24 @@
+Arrow functions in JS
+    Arrow functions provide an alternate way to write a function expression, 
+    and it has a shorter syntax.
+like: const introduction = () => {
+    console.log("hi, how are you?");
+}
+
+we can pass argument inside function parameter
+like:  const introduction = (name) => {
+    console.log("hi" +name + ", how are you?");
+}
+
+Arrow function: 
+    we can shorten our arrow functions even more using implicit returns. This only works if the function contains a 
+    single statement that returns a value. So, we can change this:
+    
+    const hey = () => {
+        return "Hey!";
+    }
+
+    To this, by removing the return keyword and changing the curly braces to parentheses:
+    const hey = () => {
+        "Hey!"
+    };

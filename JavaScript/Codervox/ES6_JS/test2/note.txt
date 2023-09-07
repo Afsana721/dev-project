@@ -1,0 +1,8 @@
+String template literals
+string concatenation in ES5
+    const snack = "peanut butter";
+    console.log("I want a " + snack + " sandwich.");
+
+ES6: Using ES6 template literals
+    const snack = "peanut butter";
+    console.log(`I want a ${snack} sandwich`);

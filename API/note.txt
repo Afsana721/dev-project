@@ -1,0 +1,9 @@
+RESTful Routes:
+URL                 HTTP Verb       Action              Description
+/posts              GET             index               Show all posts
+/posts/new          GET             new                 Show new form
+/posts              posts           create              create new posts and redirect
+/posts/:index       GET             Show                Show post with this:id
+/posts/:id/edit     GET             edit                Show edit from for post with this:id
+/posts/:id          PUT/PATCH       update              Update post with this:id and redirect
+/posts/:id          DELETE          Destroy             Delete post with this:id and redirect
