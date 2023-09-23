@@ -1,0 +1,37 @@
+JavaScript variable createion using: var, let & const
+var : is the function scope
+let : is block scope
+const: is constant - after declar it, the value will be constant, not possible to change.
+
+JavaScript Data type: It is dynamically typed language, no need to declar data type (no need
+ to assin data type explicitly. ), when 
+assin value, it will fix the data type. 
+Number, String, Boolean, Null, Undefined, Primitive
+
+Object, Array, Function, Date, Regx, Non-Primitive, (Object)
+
+
+JavaScript Operator: 
+What is Operator: 
+    - Operator is a symbol which will perform certain operation
+    - For example, if we take a simple expression,  4+5 = 9. 
+    - Here 4 and 5 are called operands and  '+' is called the Operator.
+    - JavaScript consists of different types of operators that are used to perform different operations.
+In JavaScript has different types of Operators: 
+            - Arithmetic Operators: These operators used to do mathmatic calculation
+                    +,-, *, ** (Exponentiation from ES2016), / (division), % (Modulus / division Remaninder),
+                     ++ , --  
+                        ** Exponentiation: the operation of raising one quantity to the power of another.   
+           
+            - Assignment Operators (Shorthand operators): =, +=, -=, *=, /=, %=
+
+            - Relational / Comparison Operators : 
+                ==      equal to, 
+                ===     equal value & equal type
+                !=      not equal
+                !==     not equal value or not equal type
+                ?       ternary operator.
+
+            - Logical Operators: && logic and, || logic or , ! logic not
+
+

@@ -1,0 +1,8 @@
+JavaScript to show the output -> there are many way to show JS output
+    -1. alert("string print"); function builtin 
+
+    -2. write(); function, but we need to add document object to use the write function
+        document.write("Hello, world!");  
+    and by write function we can see string on the html browser page.
+
+    -3.console.log("Can see on the console") function

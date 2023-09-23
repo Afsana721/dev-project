@@ -1,0 +1,3 @@
+JavaScript: Data Object
+    - to create a new Object  instance -> use new keyword.
+    - let dateDemo = new Date();        //create a instance of Date Object.

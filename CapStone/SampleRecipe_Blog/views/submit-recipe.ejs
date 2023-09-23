@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Recipe</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Please share your favorite food with your family attachment emotion</h1>
+  <form action="/submit-recipe" method="post">
+    <label for="author">Author of the recipe:</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="title">Title for recipe:</label>
+    <input type="text" id="title" name="title" required>
+
+    <!-- Other fields: description, ingredients, cooking process, image -->
+
+    <button type="submit">Submit Recipe</button>
+  </form>
+</body>
+</html>

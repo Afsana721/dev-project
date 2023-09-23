@@ -1,0 +1,12 @@
+Switch Case for Javascript : To reduce if else condition code by Switch case statement
+
+Start: 
+        Switch expression
+
+        - case1 ---------- Code block1 
+                            brack;
+        - case2 ---------- Code block2
+                            brack;
+        - case3 ---------- Code block3
+                            brack;
+        - default --------- default statement

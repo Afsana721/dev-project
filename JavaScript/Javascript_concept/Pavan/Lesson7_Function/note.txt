@@ -1,0 +1,11 @@
+JavaScript Function:
+    - A JavaScript Function is a block of statements which will perform a specific task.
+    - A JavaScript Function is executed when "something' invokes it (calls it).
+Example:
+    functio name (parameter1, parameter2, parameter3) {
+        //statements to be executed
+    }
+
+Why Functions required?
+    - We can reuse code: Define the code once, and use it many times.
+    - We can use the same code many times with different arguments, to produce different results. 

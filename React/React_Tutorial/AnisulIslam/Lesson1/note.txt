@@ -1,0 +1,146 @@
+React: 
+    -npm create vite@latest             also: npx create-react-app my-app
+    -add name of the project                    cd into my-app
+    -cd into project by name                    npm start    to run apps.                
+    -npm install 
+    -npm run dev            to run the project. 
+
+JSX: Stands for JavaScript XML
+JSX allows us to write and add HTML in React
+
+How to use CSS with JSX file in React: We can use two way - 
+    - Inline styling
+    - CSS stylesheet
+Note: if css or other file available inside public folde then we can access directly but
+        if files available inside 'src' folder then we have to import to use the files.
+So, from 'src' folder to import: './index.css'
+ - Inline styling
+//use CSS inside javascript & get them by ReactDom - to create styles variable
+
+    const styles = {
+    color : "red",
+    fontSize: "3rem"
+    }
+
+ - Inline styling
+//use CSS inside javascript & get them by ReactDom
+ReactDOM.render(
+  <div>
+    {/* <h1 style={styles}>Todo App</h1> */}        //stylesheet css variable inside ReactDOM
+
+    <h1 style={{color:"brown", fontSize:"3rem"}}>Todo App</h1>
+    <h3>{todoTitle}</h3>
+    <p>{todoDesc}</p>
+      <p>{currentTime}</p>
+  </div>,
+  document.getElementById('root')
+);
+
+
+- CSS stylesheet --> to access the external CSS file we can use the class name.
+.headingStyle{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    }
+
+.largeText{
+    font-size: 3rem;
+}
+
+//use css from external css file
+  ReactDOM.render(
+    <div>
+      <h1 className="headingStyle largeText">Todo App</h1>
+      <h3>{todoTitle}</h3>
+      <p>{todoDesc}</p>
+        <p>{currentTime}</p>
+    </div>,
+    document.getElementById('root')
+  );
+
+Component: Use component name Capital letter, in React: small piece of code we can use as a Component, then we can
+            use this Component for multiple purposes. 
+
+    //create a function to use as a components, so that we can use Card component multiple time. 
+  function Card() {
+    return(
+    <div className="card">
+    <h3 className='cardTitle'>{todoTitle}</h3>
+    <p className='cardDesc'>{todoDesc}</p>
+    <p className='cardFooter'>{currentTime}</p>
+  </div>
+    )
+  }
+
+//use css from external css file
+ReactDOM.render(
+  <div>
+    <h1 className="headingStyle largeText">Todo App</h1>
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>,
+  document.getElementById('root')
+);
+
+
+//data passing into component - dynamicly
+
+  function App(){
+
+    //use for loop to get Json data & pass to component as items
+    let items = [];
+    for(let x = 0; x<Data.length; x++){
+        items.push(<Card titleText ={Data[x].title}   descText = {Data[x].desc} />)
+    }
+   
+    return(
+        <div>
+            <h1 className="headingStyle largeText">Todo APP</h1>
+            {items}
+
+            {/*<Card titleText ={Data[0].title}   descText = {Data[0].desc} />
+             <Card titleText = {Data[1].title}  descText = {Data[1].desc} />
+            <Card titleText = {Data[2].title}  descText = {Data[2].desc} />
+            <Card titleText = {Data[3].title}  descText = {Data[3].desc} /> */}
+        </div>
+    )
+}
+
+
+use Map object in JS for data passing into component: 
+
+      function App(){
+
+    
+    let items = [];
+//use Map object JS
+    items =Data.map((item) => <Card  titleText = {item.title} descText = {item.desc} />)
+
+
+    
+    //use for loop to get Json data & pass to component as items
+    // for(let x = 0; x<Data.length; x++){
+    //     items.push(<Card titleText ={Data[x].title}   descText = {Data[x].desc} />)
+    // };
+   
+    return(
+        <div>
+            <h1 className="headingStyle largeText">Todo APP</h1>
+            //{items}
+
+            {/* without creating items array, we can use directly Data to mapping with unique key by index*/}
+        
+        {Data.map((item, index) => < Card key={index} titleText = {item.title} descText = {item.desc} />)}
+
+            {/*<Card titleText ={Data[0].title}   descText = {Data[0].desc} />
+             <Card titleText = {Data[1].title}  descText = {Data[1].desc} />
+            <Card titleText = {Data[2].title}  descText = {Data[2].desc} />
+            <Card titleText = {Data[3].title}  descText = {Data[3].desc} /> */}
+        </div>
+    )
+}
+

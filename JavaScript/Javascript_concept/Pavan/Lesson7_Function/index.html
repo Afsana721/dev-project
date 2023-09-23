@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input id="vali"><br><br>
+    <input id="vali2"><br><br>
+
+    <button id="addbtn">Addition</button>
+    <button id="subbtn">subtraction</button>
+    <button id="Mulbtn">multiplication</button>
+    <p id="result" style="color: #0f0f5e; padding: 2px; background-color: aquamarine; font-size: 24px;"></p>
+
+    <script>
+        document.getElementById('addbtn').onclick = add2Number;
+        document.getElementById('subbtn').onclick = subtrac2Number;
+        document.getElementById('Mulbtn').onclick = multip2Number;
+    /* addition function*/
+        function add2Number(){
+           const v1= document.getElementById('vali').value;
+           const v2= document.getElementById('vali2').value;
+           const Result = parseInt(v1)+parseInt(v2);
+           document.getElementById('result').innerHTML=Result;
+        };
+    /* subtraction function*/
+        function subtrac2Number(){
+           const v1= document.getElementById('vali').value;
+           const v2= document.getElementById('vali2').value;
+           const Result = parseInt(v1)-parseInt(v2);
+           document.getElementById('result').innerHTML=Result;
+        };
+    /* multiplication function*/
+        function multip2Number(){
+           const v1= document.getElementById('vali').value;
+           const v2= document.getElementById('vali2').value;
+           const Result = parseInt(v1) * parseInt(v2);
+           document.getElementById('result').innerHTML=Result;
+        };
+
+        
+    </script>
+</body>
+</html>

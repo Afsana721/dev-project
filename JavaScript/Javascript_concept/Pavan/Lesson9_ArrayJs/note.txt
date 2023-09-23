@@ -1,0 +1,24 @@
+JavaScript: Array -->
+    - JavaScript arrays are used to store nultiple values in a single variable.
+    - An array is a special varible, which can hold more than one value at a time.
+
+Example:    let x = 100, 
+            let student = [1,2,3];
+            let cars = ["Saab", "Valvo", "BMW"];
+            
+            
+//create an Array 
+let cars = ["Saab", "Volvo", "BMW"];
+console.log(cars);
+
+console.log("******use predefine Array contractor to create a new Array***********")
+//create an Array using JS predefine object
+let cars1 = new Array("car1", "car2", "car3");
+console.log(cars1);
+
+//access Array property
+console.log(cars[1]);
+
+//add value in Array
+cars[1]="Toyota";
+console.log(cars);

@@ -1,0 +1,6 @@
+What is CORS:
+    CORS: Cross Origin Resource Sharing
+To use API from different Origin, we need to setpu CORS:
+    Process: First: npm install cors 
+    Then: import cors -> const cors = require('cors');
+    Then: app.use(cors());          //inside our app.js file.

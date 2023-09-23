@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Blog</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Recipe Blog</h1>
+  
+  <% recipes.forEach(recipe => { %>
+    <div class="recipe">
+      <h2>Author: <%= recipe.author %></h2>
+      <p>Title: <%= recipe.title %></p>
+      <p>Description: <%= recipe.description %></p>
+      <p>Ingredients: <%= recipe.ingredients %></p>
+      <p>Cooking Process: <%= recipe.cookingProcess %></p>
+      <img src="<%= recipe.image %>" alt="Recipe Image">
+    </div>
+  <% }) %>
+</body>
+</html>

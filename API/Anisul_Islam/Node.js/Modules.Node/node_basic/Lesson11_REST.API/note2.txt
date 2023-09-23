@@ -1,0 +1,15 @@
+* We will follow MVC architecture
+* routes demo:
+    -/users -> GET -> {id, usrname, eamil}
+    /users/ -> POST -> {username, eamil}
+    /users/:id -> PUT -> update the username
+    /users/:id -> DELETE -> delete the user
+
+Setup: initialize npm : npm init -y && npm install express nodemon cors body-parser 
+dotenv uuid.
+express: to create server
+nodemon: to run server
+cors: To use API from different Origin, we need to setpu CORS
+body-parser: get formate data easily- manage middleware
+dotenv: to setup environment variables
+uuid: to generate unique id easily. 

@@ -1,0 +1,21 @@
+JS Looping statement: return is true or false.
+    -1. While Loop
+    -2. do while Loop
+    -3. for Loop
+    -4. for in Loop -> (this loop design for Array & objects)
+    -5. for of Loop -> (this loop design for Array & objects)
+
+while(condition)        //if we have one statemet, then curly bracket is optional
+{
+    statements;
+}
+
+
+do...while:
+
+do{
+
+} while(condition)
+{
+
+};

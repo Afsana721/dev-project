@@ -1,0 +1,9 @@
+Control Statement in Javascript
+    - Conditional Statement
+    - Looping statements
+    - Jumping statements
+
+Javascript has there Conditional statements
+    - if
+    - else if
+    - Switch case
