@@ -12,10 +12,16 @@
 
 <body>
     <div class="container">
-      <h1 class="mb-4">New Recipe</h1>
+        <h1 class="mb-4">New Recipe</h1>
 
-      <form action="/articles" method="POST"></form>
-        <%- include('_form_fields') %>
+        <!-- <form action="/articles" method="POST"></form> 
+            <%- include('_form_fields') %> -->
+
+            <form action="/articles" method="POST">
+                <%- include('_form_fields', { article: article }) %>
+            </form>
+        
+       
     </div>
 </body>
 

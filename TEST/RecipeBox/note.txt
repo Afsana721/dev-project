@@ -1,0 +1,8 @@
+Create Files:
+
+Create the following files in  "RecipeBox" directory:
+
+app.js (for the Express server)
+index.html (for the HTML structure)
+styles.css (for the CSS styling)
+script.js (for the JavaScript code)

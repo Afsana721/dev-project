@@ -4,13 +4,22 @@ const mongoose = require('mongoose');
 const articlesRouter = require('./routes/articles');
 
 const app = express();
+
 const PORT = process.env.PORT || 3000;
 
-app.use('/articles', articlesRouter);
+//database connection
+//const MONGODB_URI = "MONGODB_URI=mongodb+srv://afsana:afsana23@cluster0.noaoczn.mongodb.net/blog?retryWrites=true&w=majority";
+//mongoose.connect(MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
+//mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+const MONGODB_URI = "mongodb+srv://afsana:afsana23@cluster0.noaoczn.mongodb.net/blog?retryWrites=true&w=majority";
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //view engine will convert ejs code to html
 app.set('view engine', 'ejs')
 
+app.use(express.urlencoded({ extended:false}))
 
 app.get('/', (req, res) => {
     const articles = [{
@@ -28,10 +37,7 @@ app.get('/', (req, res) => {
     res.render('articles/index', {articles: articles})
 })
 
-
-
-
-
+app.use('/articles', articlesRouter);
 
 
 
