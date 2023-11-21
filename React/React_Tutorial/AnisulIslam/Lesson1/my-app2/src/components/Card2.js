@@ -4,7 +4,8 @@ class Card2 extends Component {
 
     render(){
         return(
-            <h3>Hello from Card2</h3>
+            <h3>{this.props.name}</h3>
+            
         )
     }
 

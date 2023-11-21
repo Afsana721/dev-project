@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <p id="demo"></p>
+
+    <script>
+        function my_function(val){
+            document.getElementById("demo").innerHTML = val * val;
+          }
+          //call the function
+          //my_function(5);
+    </script>
+
+    <script>
+        var x = function(){
+            alert("hello");
+        }
+        //document.getElementById("demo").innerHTML = x();
+        let y = x;
+        //document.getElementById("demo").innerHTML = y();
+    </script>
+
+    <script>
+        var myFunction = new Function("a", "b",  "return a+b");
+        var x = myFunction(2, 3);
+        //document.getElementById("demo").innerHTML = x
+    </script>
+
+    <script>
+        // (function(){
+        //     alert("hello welcome")
+        // })()
+    </script>
+
+    <script>
+        function product(a, b){
+            return a * b ;
+        }
+        let m = product(2, 5)* 5;
+        //document.getElementById("demo").innerHTML = `the product is: ${m}`;
+    </script>
+
+    <script>
+        /*var body = "return Math.PI * rad * rad ";
+        var circle = new Function("rad", body);
+        alert(circle(5));*/
+    </script>
+
+    <script>
+        const myfu = (a, b, c) => {return a * b * c}
+        let product1 = myfu(2, 3, 4);
+        //document.getElementById("demo").innerHTML = "the product of three are: " +product1;
+    </script>
+
+    <script>
+        function* generateFunc(){
+            yield 1;
+            yield 2;
+            return 3;
+        };
+        let generator = generateFunc();
+        let one = generator.next();
+        let two = generator.next();
+        let three = generator.next();
+        alert(JSON.stringify(one));
+        alert(JSON.stringify(two));
+        alert(JSON.stringify(three));
+    </script>
+    
+</body>
+</html>

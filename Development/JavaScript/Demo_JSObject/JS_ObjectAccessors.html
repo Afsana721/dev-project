@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Accessors</title>
+</head>
+<body>
+    <h1>JS object accessors</h1>
+    <h3><p id="demo"></p></h3>
+
+    <script>
+        var car = {
+            model: "BMW320B",
+            color: "Blue",
+            fuel_type: "Diesel",
+            get fuel(){
+                return this.fuel_type;
+            }
+        }
+        document.getElementById("demo").innerHTML = car.fuel_type
+    </script>
+
+<script>
+    var car = {
+        model: "Audi A4",
+        color: "red",
+        fuel_type: "",
+        set fuel(fuel) {
+            this.fuel_type = fuel;
+        }
+    }
+    car.fuel = "Petrol";
+    document.getElementById("demo").innerHTML = car.fuel_type;
+</script>
+
+</body>
+</html>

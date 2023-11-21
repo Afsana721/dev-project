@@ -1,0 +1,37 @@
+
+<%- include("layout/header.ejs")  %>
+
+
+    <main>
+        <!--create a form with the save button and use li for list after user passing something
+        it will be add on the list tag template on the Html web browser side
+        inside form use action to specify route and what method to post the data and use input tag
+        to input user data as text and to visual add palceholder, add name properites to handle 
+        user dynamic input using the name proprity -->
+        <form action="/" method="POST">
+            <input type="text" placeholder="programming language" name="pLangauge">
+            <button type="submit">Save</button>
+        </form>
+        <!--Unorderd list to hold the user input that comes from input box 
+        add pLNames as a keyword for languages array data to pass in the list tag element 
+        to show the html site, but use if else condition to get acceptable data that is 
+        required for the list-->
+        <ul>
+            <!-- <li><%= pLNames  %></li> -->
+
+            <% if(pLNames.length> 0) { %>
+                <!-- add user data using for loop one by another, if the condition meet -->
+                <% for(let x=0; x < pLNames.length; x++) { %>
+                    <li>
+                        <%= pLNames[x] %>
+                    </li>
+                    <%} %>
+
+                        <%} else { %>
+                            <p>No Data found.</p>
+                            <% }%>
+
+        </ul>
+    </main>
+    
+    <%- include("layout/footer.ejs")  %>

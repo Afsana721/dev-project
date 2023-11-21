@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Object</title>
+</head>
+<body>
+    <h1>Creating JavaScript Objects</h1>
+    <h1><p id="demo"></p></h1>
+
+    <script>
+        var student = {
+            name: "Asef",
+            age: "12",
+            studies: "7th grade"
+        };
+        document.getElementById("demo").innerHTML= student.name + " of the age "+ student.age + " studies"+ student.studies;
+    </script>
+    <script>
+        var student = new Object();
+        student.name = "Masud",
+        student.age = 40,
+        student.studies = "business";
+
+        document.getElementById("demo").innerHTML = student.name + " of the age "+ student.age + " studies"+ student.studies;
+    
+    </script>
+
+    <script>
+        function stu(name, age, studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        };
+
+        var student = new stu("khan",13, "science");
+        x = student.age = 30;
+        y = student.name = "Asef Khane";
+        z = student.studies = "Math";
+        document.getElementById("demo").innerHTML = y + " of age is "+ x + " and "+ z
+    </script>
+</body>
+</html>
+

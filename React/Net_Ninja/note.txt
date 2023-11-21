@@ -1,0 +1,128 @@
+What is React: It is a JavaScript library used to create interactive website. Allows
+us to easily create Single page Apps 
+    SPA's for short (Single Page Apps.)
+
+
+// // some exmpple: 
+// {/* <div className="content">
+// <h1>{ title }</h1>
+// <h3>{ viewers} over all!</h3>
+// <h4>Name is : { person.name}</h4>
+// <h4>Age is : {person.age}</h4>
+// {/* write javascript statement inside this { } */}
+// <p>{ 10+10}</p>
+// <p>{"Hello, ninjas!"}</p>
+// <p>{[1,"hello",10, 22]}</p>
+// <p>{Math.random() * 10}</p>
+// <a href={image}>Food</a>
+// </div> */}
+
+
+Example compnent 
+function App() {
+  // create a variable 
+  const title = "Welcome to the new blog";
+  const viewers = "50%";
+  //create an object to send data value as return App function
+  const person = {
+    name: 'Asef',
+    age : 30
+  }
+ 
+  const image = "https://thumbs.dreamstime.com/b/assorted-indian-recipes-food-various-spices-rice-wooden-table-92742528.jpg";
+  return (
+    <div className="App">
+    
+    </div>
+  );
+}
+
+
+
+Sample 2: 
+
+//import Navbar component
+import Navbar from "./Navbar";
+import './App.css';
+
+
+function App() {
+
+  
+  return (
+    <div className="App">
+      {/* <Navbar></Navbar> */}
+      <Navbar />
+      <div className="content">
+        <h1>App Component</h1>
+        
+      </div>
+    
+    </div>
+  );
+
+
+  Sample for React inline css styling: 
+
+  
+
+const Navbar = () => {
+    return ( 
+    <nav className="navbar">
+        <h1>The Dojo Blog</h1>
+        <div className="links">
+            <a href="/">Home</a>
+{/* use inline css styling, here use {} for dyamic value, & also css properites are object so use again {}-{{}} */}
+            <a href="/create" style={{
+                color: "white",
+                backgroundColor:"#f1356d",
+                borderRadius: "8px"
+            }}>New Blog</a>
+        </div>
+    </nav>
+     );
+}
+ 
+export default Navbar ;
+
+
+Sample 3: pass function inside component
+
+const Home = () => {
+// create a function to click the button
+const handleClick = () => {
+    console.log('hello, ninjas')
+}
+
+const handleClickAgain = (name) => {
+    console.log("Hello " +name)
+}
+    return ( 
+        <div className="home">
+            <h2>HomePage</h2>
+            <button onClick={handleClick}>Click me</button>
+            {/* not work like : <button onClick={handleClickAgain(name)}>Click me again</button> */}
+        
+            <button onClick={() => {
+                handleClickAgain("Asef")
+            }}>Click me again</button>    
+        </div>
+     );
+}
+ 
+export default Home;
+
+//explanation:
+{/* not work like : <button onClick={handleClickAgain(name)}>Click me again</button> */}
+        
+            <button onClick={() => {
+                handleClickAgain("Asef")
+            }}>Click me again</button>    
+
+we can't add the handleClickAgain(Masud) - function with passing parameter because that
+time, the function will autmatically invoke, running autmatically. 
+So, we create a anonymous function and invoke the anonymous function to execute handleClickAgain function
+with the parameter. 
+Now the handleClickAgain function is not invoke because it is wrapped inside the anonymous
+function. So when click the button then first anonymous function will be fired then invoke the 
+handleClickAgain function. 

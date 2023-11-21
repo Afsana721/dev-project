@@ -1,0 +1,24 @@
+//Inheritance in JavaScript
+
+class a {
+    a = 100;
+    display(){
+        
+        console.log(this.a);
+    }
+}
+
+class b extends a {
+    b = 200;
+    show(){
+        
+        console.log(this.b);
+    }
+    
+    
+}
+
+newB = new b();
+
+newB.display();
+newB.show();

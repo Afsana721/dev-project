@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       < Card1 name= "card1" desc="this is card1" />
-      <Card2 />
+        <Card2 name = "card2" />
     </div>
   );
 }

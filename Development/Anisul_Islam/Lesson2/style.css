@@ -1,0 +1,11 @@
+.style1{
+    font-size: large;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.style2{
+    font-size: large;
+    background-color: lemonchiffon;
+    border: 2px solid orange;
+}

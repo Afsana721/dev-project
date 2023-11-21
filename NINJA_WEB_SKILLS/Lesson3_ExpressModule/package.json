@@ -1,0 +1,18 @@
+{
+  "name": "lesson3_expressmodule",
+  "version": "1.0.0",
+  "description": "Express: It is a NPM framework that helps us to easily mange our routing, request, server side logice, and responses with much more elegant way, it gives easy way to read, write, and extend our codes.  That means, we can use raw node's objects to create server with different actions but express allows us save time, clean codes with different feature that really helps developers.  Process: npm install express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3",
+    "morgan": "^1.10.0"
+  }
+}

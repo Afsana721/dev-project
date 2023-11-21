@@ -1,0 +1,15 @@
+Timestamp, Temperature (°C), Humidity (%)
+2023-09-20 12:00:00, 25.5, 60
+2023-09-20 12:01:00, 25.7, 61
+2023-09-20 12:02:00, 26.0, 62
+...
+
+When you want to store data between server restarts with Node, JSON files are a simple and convenient choice. Whether you are reading a config file or persisting data for your application, Node has some built in utilities that make it easy to read and write JSON files. Using JSON files in your app can be a useful way to persist data. We will look at a few different methods for working with JSON files.
+
+In this tutorial we'll:
+
+Read JSON data from disk
+Learn to use fs module to interact with the filesystem
+Persist data to a JSON file
+Use JSON.parse and JSON.stringify to convert data to and from JSON format
+By the end of this tutorial you should be able to work with JSON files using Node’s built-in fs module.
