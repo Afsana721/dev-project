@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript this Keyword</title>
+</head>
+<body>
+
+    <!-- <script>
+        var value = 50;
+
+        function myfunction() {
+            var value = 100;
+            alert("value: "+ value);
+            alert("This value is :"+ this.value);
+        }
+
+        myfunction();
+    </script> -->
+
+    <script>
+        
+        /*const random = {
+            name: "John",
+            info(){
+                console.log("hi my name is "+ this.name);
+            }
+        };*/
+        // const name = "Asef";
+        // const random = {
+        //     name: "Tutorial",
+        //     video: ["javaScritp", "this", "keyword"],
+        //     info(){
+        //          this.video.forEach(function(tag){
+        //             console.log(this.name, tag);
+        //          })
+        //     }
+        // };
+
+        const name = "Asef";
+            const random = {
+            name: "Tutorial",
+            video: ["JavaScript", "this", "keyword"],
+            info() {
+                this.video.forEach((tag) => {
+                    console.log(this.name, tag);
+                });
+            },
+        };
+
+       random.info();
+    </script>
+    
+</body>
+</html>
